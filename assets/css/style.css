@@ -1,3 +1,15 @@
+ /*Overriding default styles added by the browser*/
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+ }
+ 
  /*Header*/
  header {
     background-color: lightsalmon;
@@ -6,9 +18,13 @@
  /*main*/
  main {
     background-color: lightslategray;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
  }
 
  /*Footer*/
  footer {
     background-color: lightgreen;
+    
  }
