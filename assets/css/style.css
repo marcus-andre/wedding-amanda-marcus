@@ -1,3 +1,7 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Caveat:wght@400..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Nothing+You+Could+Do&display=swap');
+
+
  /*Overriding default styles added by the browser*/
  * {
     margin: 0;
@@ -8,11 +12,22 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: "Baskervville", serif;
  }
- 
+ /*General Styles*/
+.text-center {
+    text-align: center;
+}
+
  /*Header*/
  header {
     background-color: lightsalmon;
+ }
+
+ /*Navbar*/
+
+ #toggle-bar {
+   display: none;
  }
 
  /*main*/
