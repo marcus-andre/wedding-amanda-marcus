@@ -1,5 +1,5 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Caveat:wght@400..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Caveat:wght@400..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Fleur+De+Leah&family=Nothing+You+Could+Do&family=Tangerine:wght@400;700&display=swap');
 
 
  /*Overriding default styles added by the browser*/
@@ -22,6 +22,15 @@
  /*Header*/
  header {
     background-color: lightsalmon;
+ }
+
+ #love h1 {
+    font-family: "Fleur De Leah", cursive;
+ }
+
+ #love h2 {
+    font-family:"Tangerine", cursive;
+    
  }
 
  /*Navbar*/
