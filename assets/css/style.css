@@ -1,5 +1,5 @@
-
-
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baskervville:ital@0;1&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dawning+of+a+New+Day&family=Nothing+You+Could+Do&family=Poiret+One&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Tangerine:wght@400;700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
 /*Overriding default styles */
 * {
     margin: 0;
@@ -12,21 +12,91 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: "Bodoni Moda SC", serif;
+ }
+
+ h1 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(20, 56, 89);
+   
  }
 
 /*Header*/
  header {
-    background-color: lightsalmon;
+    background-color: rgb(240, 250, 255);
+    padding: 0 2% 0 5%;
+   display: flex;
+   align-items: baseline;
+   justify-content: space-between;
+   box-shadow: inset -1px -1px rgb(20, 56, 89);
+  
+ }
+
+nav {
+    margin-top: 40px;
+    
+    background-color: rgb(148, 210, 246,0.05);
+    position: fixed;
+    right: 0;
+    z-index: 99;
+    display: none;
+    box-shadow: 0 2px 2px black;
+}
+
+#menu li{
+    font-size: small;
+    color: rgb(20, 56, 89);
+    list-style-type: none;    
+}
+
+#nav-bar {
+    display: none;
+}
+
+.nav-bar-label {
+    color: rgb(20, 56, 89);
+}
+
+#nav-bar:checked~nav {
+    display: block;
+}
+
+ header a {
+    text-decoration: none;
+    color:inherit;
  }
 
  /*main*/
  main {
-    background-color: lightslategray;
+    background-color: whitesmoke;
     flex: 1 0 auto;  
  }
 
- /*Footer*/
- footer {
-    background-color: lightgreen;
-    
+ #hero {
+    position: relative;
+    min-height:100vh;
+    background: url("../images/hero-image.jpg") no-repeat 53% 50%/cover;
+    align-content: center;
+
  }
+
+ span {
+    display: block;
+ }
+
+ #hero p {
+   font-family: "Dawning of a New Day", cursive;
+   font-size: 2.2rem;
+   letter-spacing: 2px;
+   text-align: end;
+   padding-right: 2%;
+   
+ }
+
+.date {
+    font-size: 0.8rem;
+    display: inline;
+    padding-right: 5%;
+}
