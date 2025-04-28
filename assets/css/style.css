@@ -16,7 +16,7 @@
  }
 
  h1 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: rgb(20, 56, 89);
@@ -26,7 +26,7 @@
 /*Header*/
  header {
     background-color: rgb(240, 250, 255);
-    padding: 0 2% 0 5%;
+    padding: 0 6px 0 15px;
    display: flex;
    align-items: baseline;
    justify-content: space-between;
@@ -58,6 +58,7 @@ nav {
 
 .nav-bar-label {
     color: rgb(20, 56, 89);
+    font-size: 1.8rem;
 }
 
 #nav-bar:checked~nav {
@@ -87,7 +88,7 @@ nav {
     display: block;
  }
 
- #hero p {
+ .couple-text {
    font-family: "Dawning of a New Day", cursive;
    font-size: 2.2rem;
    letter-spacing: 2px;
@@ -96,8 +97,76 @@ nav {
    
  }
 
-.date {
+.wedding-date {
     font-size: 0.8rem;
     display: inline;
     padding-right: 5%;
+}
+
+/*Media query: tablets and larger (768px and up)*/
+@media screen and (min-width: 768px) {
+
+   header {
+      
+      padding: 0 8px 0 16px;
+     }
+
+   #menu li {
+      font-size: medium;
+   }
+   /* Make "Amanda & Marcus" heading bigger*/
+   .couple-text {
+      font-size: 2.6rem;
+   }
+
+   .wedding-date {
+      font-size: 1rem;
+   }
+
+}
+
+/*Media Query: laptop and desktop (992px and up)*/
+@media screen and (min-width: 992px) {
+
+  header {  
+   padding: 1px 10px 1px 25px;
+  }
+
+   nav {        
+      margin: 0; 
+      position:relative;
+      display: block;
+      box-shadow: none;
+          
+  }
+  /*Make the list show in a row instead of colunm*/
+  #menu {
+   display: flex;
+  }
+
+  #menu a {
+   font-size: 1.4rem;
+   padding-left: 15px;
+   
+  }
+
+  h1 {
+   font-size: 2rem;
+  }
+
+  .nav-bar-label {
+   display: none;
+  }
+
+/* Make "Amanda & Marcus" heading bigger*/
+.couple-text {
+   font-size: 3.2rem;
+}
+
+.wedding-date {
+   font-size: 1.4rem;
+}
+
+  
+
 }
