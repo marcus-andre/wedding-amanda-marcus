@@ -1,111 +1,112 @@
 /* Google Fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baskervville:ital@0;1&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dawning+of+a+New+Day&family=Nothing+You+Could+Do&family=Poiret+One&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Tangerine:wght@400;700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
 /*Overriding default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 
 
- body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: "Caveat", cursive;
- }
+body {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   font-family: "Caveat", cursive;
+}
 
- h1 {
-    font-size: 1.8rem;
-    font-family:"Baskervville", serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: rgb(20, 56, 89);
+h1 {
+   font-size: 1.8rem;
+   font-family: "Baskervville", serif;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   color: rgb(20, 56, 89);
 
-   
-   
- }
+
+
+}
 
 /*Header*/
- header {
-    background-color:#ffffff;
-    padding: 0 6px 0 15px;
+header {
+   background-color: #ffffff;
+   padding: 0 6px 0 15px;
    display: flex;
-   align-items: baseline;   
+   align-items: baseline;
    justify-content: space-between;
    box-shadow: inset -1px -1px rgb(20, 56, 89);
    position: fixed;
    z-index: 99;
    width: 100%;
-  
- }
 
- header>a {
+}
+
+header>a {
    vertical-align: middle;
- }
+}
 
 nav {
-    margin-top: 40px;
-    
-    background-color: rgb(148, 210, 246,0.05);
-    position: fixed;
-    right: 0;    
-    z-index: 99;
-    display: none;
-    box-shadow: 0 2px 2px black;
+   margin-top: 40px;
+
+   background-color: rgb(148, 210, 246, 0.05);
+   position: fixed;
+   right: 0;
+   z-index: 99;
+   display: none;
+   box-shadow: 0 2px 2px black;
 }
 
 #menu {
    margin-bottom: 5px;
 }
 
-#menu li{
-    font-size: small;
-    color: rgb(20, 56, 89);
-    list-style-type: none;
-        
+#menu li {
+   font-size: 20px;
+   color: rgb(20, 56, 89);
+   list-style-type: none;
+
 }
 
 #nav-bar {
-    display: none;
+   display: none;
 }
 
 .nav-bar-label {
-    color: rgb(20, 56, 89);
-    font-size: 1.8rem;
+   color: rgb(20, 56, 89);
+   font-size: 1.8rem;
 }
 
 #nav-bar:checked~nav {
-    display: block;
+   display: block;
 }
 
- header a {
-    text-decoration: none;
-    color:inherit;
- }
+header a {
+   text-decoration: none;
+   color: inherit;
+}
 
- /*main*/
- main {
-    background-color: #ffffff;
-    flex: 1 0 auto;  
- }
+/*main*/
+main {
+   background-color: #ffffff;
+   flex: 1 0 auto;
+}
 
- /*Home section*/
- #home {
-    
-    min-height:100vh;
-    background: url("../images/hero-image.jpg") no-repeat 53% 50%/cover;
-    
-    background-attachment: fixed;
-    position: relative;
+/*Home section*/
+#home {
 
- }
+   min-height: 100vh;
+   background: url("../images/hero-image.jpg") no-repeat 53% 50%/cover;
 
- span {
-    display: block;
- }
+   background-attachment: fixed;
+   position: relative;
 
- .couple-text {
+}
+
+span {
+   display: block;
+}
+
+.couple-text {
    position: absolute;
    font-family: "Dawning of a New Day", cursive;
    font-size: 2.2rem;
@@ -114,14 +115,14 @@ nav {
    text-align: start;
    padding-right: 2%;
 
-right: 2%;
-   
- }
+   right: 2%;
+
+}
 
 .wedding-date {
-    font-size: 0.8rem;
-    display: inline;
-    padding-right: 5%;
+   font-size: 0.8rem;
+   display: inline;
+   padding-right: 5%;
 }
 
 /*Our Story Section*/
@@ -130,60 +131,66 @@ right: 2%;
 #our-story {
    display: flex;
    flex-direction: column;
-   
-   
+
+
 }
 
 #our-story p {
    font-family: "Tangerine", cursive;
    text-align: center;
-     padding: 0 5px;
+   padding: 0 5px;
    font-size: 1.6rem;
    box-shadow: 0 2px 2px black;
    width: 100%;
    align-self: center;
-  
-   
+
+
 }
 
 #our-story h2 {
    font-family: "Nothing You Could Do", cursive;
    padding: 1%;
-   margin-bottom: 0;
-   
-   
+   margin-bottom: 5px;
+
+
 }
 
 .our-story {
    display: flex;
+   flex-direction: column;
    justify-content: space-between;
 }
+
 .our-story-message1 {
-   max-width: 50%;
-   padding-left: 15px;
-  margin-top: 10px;
-  text-align: center;
+
+   padding: 0 10px;
+   margin-top: 10px;
+   text-align: center;
 }
 
 .our-story-message2 {
-   align-self: end;
-   padding-right: 15px;
+   text-align: center;
+   padding: 0 10px;
+   margin-bottom: 10px;
 }
 
-.photos{
+.photos {
    display: flex;
+
    flex-wrap: wrap;
-   justify-content:center;
+   justify-content: center;
    padding: 5px;
-   
-   
+
+
 }
 
-.photos img{
-  
-  
-   padding: 15px; 
+.photos img {
+
+
+   padding: 15px;
    border-radius: 50%;
+   height: 90%;
+   width: 250px;
 }
 
 
@@ -206,27 +213,29 @@ right: 2%;
 }
 
 footer {
-   background:rgb(6, 155, 213) linear-gradient(180deg, #0000, #213944);
+   background: rgb(6, 155, 213) linear-gradient(180deg, #0000, #213944);
    height: 30vh;
 }
+
 /*Media query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
 
    header {
-      
-      padding: 0 8px 0 16px;
-     }
 
-     #home {
+      padding: 0 8px 0 16px;
+   }
+
+   #home {
       background: url("../images/hero-image.jpg") no-repeat 45% 20px/200%;
       background-attachment: fixed;
-      
-      
+
+
    }
-     
+
    #menu li {
       font-size: 26px;
    }
+
    /* Make "Amanda & Marcus" heading bigger*/
    .couple-text {
       font-size: 2.6rem;
@@ -237,71 +246,131 @@ footer {
       font-size: 1rem;
    }
 
+   .our-story {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   .our-story-message1 {
+
+      padding: 0 10px;
+      margin: 0;
+      text-align: center;
+   }
+
+   .our-story-message2 {
+      text-align: center;
+      padding: 0 10px;
+      margin-bottom: 10px;
+   }
+
+
+   .photos img {
+      height: 95%;
+      width: 250px;
+      align-self: center;
+      border-radius: 50%;
+
+   }
+
 }
 
 /*Media Query: laptop and desktop (992px and up)*/
 @media screen and (min-width: 992px) {
 
-  header {  
-   padding: 1px 10px 1px 25px;
-  }
+   header {
+      padding: 1px 10px 1px 25px;
+   }
 
-  #home {
-   background: url("../images/hero-image.jpg") no-repeat 52% 20px/250%;
-   background-attachment: fixed;
-   
-   
-}
+   #home {
+      background: url("../images/hero-image.jpg") no-repeat 52% 20px/250%;
+      background-attachment: fixed;
 
-   nav {        
-      margin: 0; 
-      position:relative;
+
+   }
+
+   nav {
+      margin: 0;
+      position: relative;
       display: block;
       box-shadow: none;
-      
-          
-  }
-  /*Make the list show in a row instead of colunm*/
-  #menu {
-   display: flex;
-  }
 
-  #menu a {
-   font-size: 1.5rem;
-   padding-left: 15px;
-   
-  }
 
-  h1 {
-   font-size: 1.8rem;
-  }
+   }
 
-  .nav-bar-label {
-   display: none;
-  }
+   /*Make the list show in a row instead of colunm*/
+   #menu {
+      display: flex;
+   }
 
-/* Make "Amanda & Marcus" heading bigger*/
-.couple-text {
-   font-size: 3.6rem;
-}
+   #menu a {
+      font-size: 1.5rem;
+      padding-left: 15px;
 
-.wedding-date {
-   font-size: 1.4rem;
-}
+   }
 
-  
+   h1 {
+      font-size: 1.8rem;
+   }
+
+   .nav-bar-label {
+      display: none;
+   }
+
+   /* Make "Amanda & Marcus" heading bigger*/
+   .couple-text {
+      font-size: 3.6rem;
+   }
+
+   .wedding-date {
+      font-size: 1.4rem;
+   }
+
+   .our-story {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   .our-story-message1 {
+
+      padding: 0 10px;
+      margin: 0;
+      text-align: center;
+      align-self: flex-start;
+   }
+
+   .our-story-message2 {
+      text-align: center;
+      padding: 0 10px;
+      margin-bottom: 10px;
+      align-self: flex-end;
+   }
+
+
+   .photos img {
+      height: 95%;
+      width: 300px;
+      align-self: center;
+      border-radius: 50%;
+
+   }
+
 
 }
 
 /*Media query: Desktop with larger screen (1250px and up)*/
 @media screen and (min-width: 1250px) {
+
    /*Make the hero image position better*/
    #home {
       background: url("../images/hero-image.jpg") no-repeat 40% 20px/130%;
       background-attachment: fixed;
-      
-      
+
+
    }
+
    .couple-text {
       font-size: 4rem;
       top: 20%;
