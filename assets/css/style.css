@@ -1,6 +1,5 @@
 /* Google Fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baskervville:ital@0;1&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dawning+of+a+New+Day&family=Nothing+You+Could+Do&family=Poiret+One&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Tangerine:wght@400;700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Caveat:wght@400..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dawning+of+a+New+Day&family=La+Belle+Aurore&family=Ms+Madi&family=Nothing+You+Could+Do&family=Parisienne&family=Tangerine:wght@400;700&display=swap');
 /*Overriding default styles */
 * {
    margin: 0;
@@ -16,7 +15,7 @@ body {
    font-family: "Caveat", cursive;
 }
 
-h1 {
+header h1 {
    font-size: 1.8rem;
    font-family: "Baskervville", serif;
    text-transform: uppercase;
@@ -198,18 +197,42 @@ span {
 
 /*Details Section*/
 #details {
-   height: 30vh;
+ background-color: #64a8c8;
+ background: url("../images/copacabana-image.jpg") no-repeat 50% 5%/600% ;
+ col
+ font-family:  "Ms Madi", cursive;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+}
+
+#details h2 {
+   font-size: 2rem;
+   color: #ffffff;
+}
+
+.text-fade {
+   color: #ffffff;
+   font-size: 1.4rem;
+
+}
+
+.text-details {
+   font-size: 1.2rem;
+   font-family: "Caveat", cursive;
+   line-height: 1.5;
+   color: rgb(255, 255, 255);
 }
 
 /*Gallery Section*/
 #Gallery {
-   height: 70vh;
+background-color: #ffffff;
 }
 
 
 /*RSVP Section*/
 #rsvp {
-   height: 30vh;
+ background-color: #5794b0;
 }
 
 footer {
