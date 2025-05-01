@@ -199,8 +199,7 @@ span {
 #details {
  background-color: #64a8c8;
  background: url("../images/copacabana-image.jpg") no-repeat 50% 5%/600% ;
- col
- font-family:  "Ms Madi", cursive;
+ font-family: "Ms Madi", cursive;
  display: flex;
  flex-direction: column;
  text-align: center;
