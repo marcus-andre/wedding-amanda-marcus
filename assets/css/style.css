@@ -1,5 +1,6 @@
 /* Google Fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Caveat:wght@400..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dawning+of+a+New+Day&family=La+Belle+Aurore&family=Ms+Madi&family=Nothing+You+Could+Do&family=Parisienne&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Caveat:wght@400..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dawning+of+a+New+Day&family=DynaPuff:wght@400..700&family=La+Belle+Aurore&family=Ms+Madi&family=Nothing+You+Could+Do&family=Parisienne&family=Tangerine:wght@400;700&display=swap');
+
 /*Overriding default styles */
 * {
    margin: 0;
@@ -28,21 +29,19 @@ header h1 {
 
 /*Header*/
 header {
-   background-color: #ffffff;
+   
+   transition:slide 0.5s;
    padding: 0 6px 0 15px;
    display: flex;
    align-items: baseline;
-   justify-content: space-between;
-   box-shadow: inset -1px -1px rgb(20, 56, 89);
+   justify-content: end;
+   /* background-color: rgb(124, 203, 243, 0.9); */
    position: fixed;
    z-index: 99;
    width: 100%;
 
 }
 
-header>a {
-   vertical-align: middle;
-}
 
 nav {
    margin-top: 40px;
@@ -52,16 +51,18 @@ nav {
    right: 0;
    z-index: 99;
    display: none;
-   box-shadow: 0 2px 2px black;
+
+
 }
 
 #menu {
    margin-bottom: 5px;
+
 }
 
 #menu li {
    font-size: 20px;
-   color: rgb(20, 56, 89);
+   color: rgb(193, 247, 249);
    list-style-type: none;
 
 }
@@ -71,7 +72,7 @@ nav {
 }
 
 .nav-bar-label {
-   color: rgb(20, 56, 89);
+   color: rgb(193, 247, 249);
    font-size: 1.8rem;
 }
 
@@ -86,16 +87,14 @@ header a {
 
 /*main*/
 main {
-   background-color: #ffffff;
+   background: linear-gradient(250deg, #f9f9fb, rgb(124, 203, 243, 0.9), rgb(248, 250, 250));
    flex: 1 0 auto;
 }
 
 /*Home section*/
 #home {
-
    min-height: 100vh;
-   background: url("../images/hero-image.jpg") no-repeat 53% 50%/cover;
-
+   background: rgb(134, 239, 244) url("../images/hero-image2.jpg") no-repeat 48% 0/cover;
    background-attachment: fixed;
    position: relative;
 
@@ -108,13 +107,18 @@ span {
 .couple-text {
    position: absolute;
    font-family: "Dawning of a New Day", cursive;
-   font-size: 2.2rem;
+   font-size: 2.8rem;
    letter-spacing: 2px;
-   top: 30%;
+   line-height: 0.8;
+   padding-left: 2%;
+   padding-top: 2%;
+   height: 100vh;
    text-align: start;
-   padding-right: 2%;
+   color: rgb(193, 247, 249);
+   background-color: rgb(0, 0, 0, 0.3);
+   width: 100%;
 
-   right: 2%;
+
 
 }
 
@@ -136,11 +140,12 @@ span {
 
 #our-story p {
    font-family: "Tangerine", cursive;
-   text-align: center;
+   text-align: start;
    padding: 0 5px;
-   font-size: 1.6rem;
+   font-size: 2rem;
    box-shadow: 0 2px 2px black;
    width: 100%;
+
    align-self: center;
 
 
@@ -165,12 +170,14 @@ span {
    padding: 0 10px;
    margin-top: 10px;
    text-align: center;
+   line-height: 0.9;
 }
 
 .our-story-message2 {
    text-align: center;
    padding: 0 10px;
    margin-bottom: 10px;
+   line-height: 0.9;
 }
 
 .photos {
@@ -186,10 +193,11 @@ span {
 .photos img {
 
 
-   padding: 15px;
+   padding: 5px;
    border-radius: 50%;
    height: 90%;
    width: 250px;
+
 }
 
 
@@ -197,41 +205,75 @@ span {
 
 /*Details Section*/
 #details {
- background-color: #64a8c8;
- background: url("../images/copacabana-image.jpg") no-repeat 50% 5%/600% ;
- font-family: "Ms Madi", cursive;
- display: flex;
- flex-direction: column;
- text-align: center;
+
+   background: url("../images/copacabana-image4.png") no-repeat 50% 50%/cover;
+   font-family: "Caveat", cursive;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+
+
+}
+
+.ceremony-title,
+.celebration-title {
+   background-color: rgb(0, 0, 0, 0.5);
+   border: 1px solid white;
+   color: rgb(193, 247, 249);
+   display: flex;
+   flex-direction: column;
 }
 
 #details h2 {
-   font-size: 2rem;
-   color: #ffffff;
+   font-size: 2.2rem;
+   font-family: "La Belle Aurore", cursive;
+   text-align: center;
+
 }
 
 .text-fade {
-   color: #ffffff;
-   font-size: 1.4rem;
+   text-align: start;
+   font-size: 1.6rem;
+   color: rgb(31, 195, 201);
 
 }
 
 .text-details {
-   font-size: 1.2rem;
-   font-family: "Caveat", cursive;
+   font-size: 1.4rem;
    line-height: 1.5;
-   color: rgb(255, 255, 255);
+
+   text-align: center;
+   width: 60%;
+   justify-self: center;
+   color: rgb(123, 191, 194);
+
+}
+
+.where-when {
+   text-align: center;
+
+   font-size: 18px;
+}
+
+.where-when h3 {
+   color: rgb(193, 247, 249);
+   font-family: "La Belle Aurore", cursive;
+}
+
+.where-when p {
+   color: rgb(123, 191, 194);
 }
 
 /*Gallery Section*/
 #Gallery {
-background-color: #ffffff;
+background-color: #75bddf;
 }
+
 
 
 /*RSVP Section*/
 #rsvp {
- background-color: #5794b0;
+   background-color: #5794b0;
 }
 
 footer {
@@ -245,10 +287,11 @@ footer {
    header {
 
       padding: 0 8px 0 16px;
+
    }
 
    #home {
-      background: url("../images/hero-image.jpg") no-repeat 45% 20px/200%;
+      background: url("../images/hero-image.jpg") no-repeat 45% 10%/200%;
       background-attachment: fixed;
 
 
@@ -261,7 +304,7 @@ footer {
    /* Make "Amanda & Marcus" heading bigger*/
    .couple-text {
       font-size: 2.6rem;
-      top: 40%;
+
    }
 
    .wedding-date {
@@ -306,7 +349,7 @@ footer {
    }
 
    #home {
-      background: url("../images/hero-image.jpg") no-repeat 52% 20px/250%;
+      background: url("../images/hero-image.jpg") no-repeat 52% 10%/cover;
       background-attachment: fixed;
 
 
@@ -387,7 +430,7 @@ footer {
 
    /*Make the hero image position better*/
    #home {
-      background: url("../images/hero-image.jpg") no-repeat 40% 20px/130%;
+      background: url("../images/hero-image.jpg") no-repeat 40% 5%/cover;
       background-attachment: fixed;
 
 
@@ -395,6 +438,6 @@ footer {
 
    .couple-text {
       font-size: 4rem;
-      top: 20%;
+
    }
 }
