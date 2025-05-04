@@ -30,8 +30,7 @@ header h1 {
 /*Header*/
 header {
 
-   transition: slide 0.5s;
-   padding: 0 6px 0 15px;
+   transition: slide 0.5s;   
    display: flex;
    align-items: baseline;
    justify-content: end;
@@ -44,42 +43,53 @@ header {
 
 
 nav {
-   margin-top: 40px;
-
-   background-color: rgb(148, 210, 246, 0.05);
-   position: fixed;
-   right: 0;
+   
+   
+   position: absolute;   
+   right: 3px;
    z-index: 99;
-   display: none;
-
-
+   display: none;   
+   top:100%;
 }
 
 #menu {
    margin-bottom: 5px;
-
+  
+   background-color:rgba(162, 231, 243, 0.9);
+  border-radius: 40%;
+ 
 }
 
 #menu li {
-   font-size: 20px;
-   color: rgb(79, 78, 78);
-   list-style-type: none;
+ padding-left: 12px;
+ padding-right: 3px;
 
+   font-size: 20px;
+   /* color: rgb(79, 78, 78); */
+   color:rgb(46, 96, 82);
+   list-style-type: none;
+   line-height: 1.7;
+
+}
+
+
+.nav-bar-label {
+   /* color: rgb(193, 247, 249); */
+   background-color: rgba(162, 231, 243, 0.9);
+   border-radius: 20%;
+   color: rgb(46, 96, 82);
+   font-size: 2rem;
+   margin-right: 28px;
+}
+/*Navbar toggle*/
+#nav-bar:checked~nav {
+   display: block;
 }
 
 #nav-bar {
    display: none;
 }
 
-.nav-bar-label {
-   /* color: rgb(193, 247, 249); */
-   color: rgb(79, 78, 78);
-   font-size: 1.8rem;
-}
-
-#nav-bar:checked~nav {
-   display: block;
-}
 
 header a {
    text-decoration: none;
@@ -108,7 +118,7 @@ span {
 .couple-text {
    position: absolute;
    font-family: "Dawning of a New Day", cursive;
-   font-size: 3rem;
+   font-size: 2.2rem;
    letter-spacing: 2px;
    line-height: 0.8;
    padding-left: 2%;
@@ -116,7 +126,7 @@ span {
    height: 100vh;
    text-align: start;
    /* color: rgb(193, 247, 249); */
-   color: rgb(79, 78, 78);
+   color:rgb(46, 96, 82);
    background-color: rgba(113, 243, 245, 0.3);
    width: 100%;
 
@@ -146,8 +156,8 @@ span {
    padding: 5px 10px;
    letter-spacing: 1px;
    font-size: 1.8rem;
-   box-shadow: 0 2px 2px black;
-   color: rgb(80, 80, 80);
+   /* box-shadow: 0 2px 2px black;
+   color: rgb(80, 80, 80); */
    text-align: justify;
 }
 
@@ -178,6 +188,7 @@ span {
    margin-bottom: 10px;
    line-height: 0.9;
 }
+
 
 .image {
    display: flex;
@@ -334,6 +345,10 @@ footer {
       font-size: 26px;
    }
 
+   .nav-bar-label {
+      margin-right: 38px;
+   }
+
    /* Make "Amanda & Marcus" heading bigger*/
    .couple-text {
       font-size: 3rem;
@@ -421,9 +436,10 @@ footer {
       display: flex;
    }
 
+
    #menu a {
-      font-size: 1.5rem;
-      padding-left: 15px;
+      font-size: 2rem;
+      padding: 0 15px;
 
    }
    .our-story-message2 h2,
