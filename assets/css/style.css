@@ -136,9 +136,6 @@ span {
 }
 
 /*Our Story Section*/
-
-
-
 #our-story {
    display: flex;
    flex-direction: column;
@@ -196,14 +193,16 @@ span {
 
 .our-story h2 {
    font-family: "Lato", sans-serif;
-   font-size: 16px;
+   font-size: 14px;
+   letter-spacing: 2px;
    color: #312D24;
    margin: 15px 0;
 }
 
 #bottom-border {
    border-bottom: 0.8px solid rgba(179, 179, 179, 0.73);
-   padding-bottom: 40px;
+   padding-bottom: 30px;
+   margin-bottom: 20px;
    
 }
 .our-story-message1 {
@@ -245,6 +244,28 @@ span {
    flex-direction: column;
  
 
+}
+
+#brief-msg {
+   font-family:"Lato", sans-serif;
+   color:  #312D24;;
+   font-size: 12px;
+   letter-spacing: 2px;
+   line-height: 20px;
+   padding: 60px 15px;
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: 400;
+}
+.event-frame {
+   background-color: rgb(190, 160, 123);
+   line-height: 0;
+   margin: 40px 0;
+}
+.events-img {
+   width: 100%;
+   padding: 5px;
+   
 }
 
 #ceremony-title, #celebration-title {
@@ -290,8 +311,11 @@ span {
    font-size: 14px;
 
 }
-
-
+   iframe {
+      border: 0;
+      padding: 0 5px;
+}
+   
 /*Gallery Section*/
 #gallery>h2 {
    border-top: 0.8px solid rgba(179, 179, 179, 0.73);
@@ -379,62 +403,21 @@ footer {
    .wedding-date {
       font-size: 10px;
       letter-spacing: 2px;
-
-
    }
-
-   .our-story {
-      display: flex;
-
-      justify-content: space-between;
-   }
-
-   #our-story p {
-      box-shadow: none;
-      width: 50%;
-
-   }
-
-   #our-story h2 {
-      margin-top: 20px;
-      padding-bottom: 10px;
-   }
-
-   .our-story-message2 p {
-      margin-bottom: 10px;
-   }
+   
+ #ceremony-title, #celebration-title {
+   width: 20%;
+   padding: 0 0 20px 0;
+ }
 
 
 
-   .our-story-message1 p,
-   .our-story-message1 h2 {
-      justify-self: start;
-
-   }
-
-   .our-story-message2 p,
-   .our-story-message2 h2 {
-      justify-self: end;
-
-   }
-
-   .our-story-message1 {
-
-      padding: 0 10px;
-      margin: 0;
-      text-align: center;
-
-   }
-
-   .our-story-message2 {
-      text-align: center;
-      padding: 0 10px;
-      margin-bottom: 10px;
-
-   }
-
-
-
+iframe {
+  width: 100%;
+  height: 300px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
 
 }
 
