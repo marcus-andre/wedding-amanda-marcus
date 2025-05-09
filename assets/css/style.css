@@ -1,5 +1,7 @@
 /* Google Fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dawning+of+a+New+Day&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Oooh+Baby&family=Playwrite+AU+NSW:wght@100..400&family=Tangerine:wght@400;700&display=swap');* {
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dawning+of+a+New+Day&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Oooh+Baby&family=Playwrite+AU+NSW:wght@100..400&family=Tangerine:wght@400;700&display=swap');
+
+* {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -12,17 +14,23 @@ body {
    flex-direction: column;
    font-family: "Montserrat", sans-serif;
 }
-
+h1 {
+   font-size: 16px;
+   text-align: center;
+   text-transform: uppercase;
+   text-decoration: underline;
+   margin: 30px 0;
+}
 /*Header*/
 header {
-   padding: 5px 10px;
+   padding: 3px 10px;
    display: flex;
-   align-items:center; 
+   align-items: center;
    justify-content: space-between;
    /* background: linear-gradient(265deg, #b9e1f6, rgb(90, 172, 227), #b4e1f5);  */
    /* background: linear-gradient(248deg, #f9fafa, rgb(171, 218, 229), rgb(255, 255, 255)); */
    background-color: rgb(235, 197, 154);
-   box-shadow: 0 0.3px 0.8px  #858484; 
+   box-shadow: 0 0.3px 0.8px #858484;
    position: fixed;
    z-index: 99;
    width: 100%;
@@ -40,21 +48,23 @@ nav {
    /* background: linear-gradient(274deg, #f9fafa, rgb(171, 218, 229), rgb(255, 255, 255)); */
    background-color: rgb(235, 197, 154);
    width: 100%;
-   position: absolute;  
-   display: none;   
-   top:100%;
+   position: absolute;
+   display: none;
+   top: 100%;
    left: 0;
 }
+
 #menu {
    border-top: 1px solid #8584849a;
 }
+
 #menu li {
 
-   padding: 10px  30px ;
-font-family: "Lato", sans-serif;
+   padding: 10px 30px;
+   font-family: "Lato", sans-serif;
    font-size: 12px;
-  letter-spacing: 2px;
-   color:#312D24;
+   letter-spacing: 2px;
+   color: #312D24;
    list-style-type: none;
    line-height: 20px;
    text-transform: uppercase;
@@ -70,6 +80,7 @@ font-family: "Lato", sans-serif;
    font-size: 24px;
    margin: 2px 5px;
 }
+
 /*Navbar toggle*/
 #nav-bar:checked~nav {
    display: block;
@@ -95,32 +106,33 @@ main {
 /*Home section*/
 #home {
    min-height: 100vh;
-   background: url("../images/hero-image.jpg") no-repeat 40%  30px/cover fixed;
-      
+   background: url("../images/hero-image.jpg") no-repeat 38% 20px/cover fixed;
+
 }
 
 span {
    display: block;
-   
+
 }
 
 .couple-text {
    position: absolute;
    font-family: "Oooh Baby", cursive;
    font-size: 24px;
+   padding-left: 5px;
    letter-spacing: 2px;
    line-height: 28px;
    text-align: start;
-   /* color: rgb(193, 247, 249); */
-   color:#292a26;
-  top: 45%;
+   color: #292a26;
+   top: 37%;
 
 }
 
 .wedding-date {
-   font-size:10px;
+   font-size: 9px;
    display: inline;
-   
+   font-family: "Lato", sans-serif;
+   padding-left: 20px;
 }
 
 /*Our Story Section*/
@@ -139,81 +151,77 @@ span {
    margin-top: 20px;
    text-align: center;
    color: #312D24;
-   
+
 }
-#welcome div{
+
+#welcome div {
    padding: 20px 15px;
 }
+
 .welcome-title {
    font-family: "Lato", sans-serif;
    font-size: 16px;
    font-weight: 400;
-      
+
 }
 
 #welcome h2 {
-   
+
    font-size: 12px;
    letter-spacing: 2px;
    line-height: 20px;
-   font-weight:400;
+   font-weight: 400;
    text-transform: uppercase;
-   
+
 }
 
 #svg-mark {
    text-align: center;
-   padding: 30px 0;
+   padding: 40px 0;
 }
-
-.our-story p {
-  font-family: "Montserrat", sans-serif;
-   padding: 5px 10px;
-   margin: 10px 5px;
-   letter-spacing: 2px;
-   line-height: 20px;
-   font-size: 12px;   
-   color: #312D24;
-   text-align: center;
-}
-
-.our-story h2 {
-   font-family: "Lato", sans-serif;
-   font-size: 20px;
-   color: #312D24;
-   padding: 5px 10px;
-   margin: 5px;
-}
-
 .our-story {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
 }
 
-.our-story-message1 {
-
-   padding: 0 10px;
-  
-   text-align: center;
-  
-}
-
-.our-story-message2 {
-   text-align: center;
-   padding: 0 10px;
-   
+.our-story p {
+   font-family: "Montserrat", sans-serif; 
+   letter-spacing: 2px;
+   line-height: 20px;
+   font-size: 12px;
+   color: #312D24;
  
 }
 
+.our-story h2 {
+   font-family: "Lato", sans-serif;
+   font-size: 16px;
+   color: #312D24;
+   margin: 15px 0;
+}
+
+#bottom-border {
+   border-bottom: 0.8px solid rgba(179, 179, 179, 0.73);
+   padding-bottom: 40px;
+   
+}
+.our-story-message1 {
+   padding: 10px 15px;
+   text-align: start;
+}
+
+.our-story-message2 {
+   text-align: start;
+   padding: 0px 15px;
+   
+ }
 
 .image {
    display: flex;
-
    flex-wrap: wrap;
    justify-content: center;
    padding: 5px;
-
 
 }
 
@@ -231,68 +239,65 @@ span {
 /*Details Section*/
 #details {
 
-   
+
    font-family: "Montserrat", sans-serif;
    display: flex;
    flex-direction: column;
-   text-align: center;
-
-
-}
-
-
-#details h2 {
-   margin: 15px 0;
-   font-size: 16px;
-   font-family:"Lato", sans-serif;
-   text-align: center;
+ 
 
 }
 
-.text-fade {
-   border-top: 0.8px solid rgba(179, 179, 179, 0.73);
-   color: #000000;
-   font-family:"Lato", sans-serif;
-   text-align: start;
- text-decoration: underline;
- text-transform: uppercase;
- letter-spacing: 2px;
-   font-size: 10px;
-   margin: 20px;
-   padding: 20px 10px;
+#ceremony-title, #celebration-title {
+   display: flex;
+   width: 65%;
+   justify-content: space-around;
+  align-items:baseline;
+  padding: 15px 15px; 
    
+ 
 }
 
+#ceremony-title h2,
+   #celebration-title h2 {
+  
+   font-size: 16px;
+   font-family: "Lato", sans-serif;
+ 
+}
 
 .text-details {
    font-size: 12px;
-   line-height: 30px;
+   line-height: 20px;
    letter-spacing: 2px;
-   text-align: center; 
-   padding: 0 10px;
+   text-align: start;
+   padding: 10px 15px;
+   padding-top: 0;
 }
 
 .where-when {
-   
-   text-align: center;
+
+   text-align: start;
    line-height: 20px;
    letter-spacing: 2px;
    font-size: 12px;
-   padding: 20px 10px;
+   padding: 0 15px;
+   padding-bottom: 30px;
 }
 
 .where-when h3 {
-   margin: 15px 0;
+   padding: 10px 0;
    font-family: "Lato", sans-serif;
-   font-size: 16px;
+   font-size: 14px;
 
 }
+
 
 /*Gallery Section*/
 #gallery>h2 {
    border-top: 0.8px solid rgba(179, 179, 179, 0.73);
-   padding: 10px 0;
-   
+   margin: 10px 0;
+   padding-top: 20px;
+
 }
 
 #gallery h2 {
@@ -314,12 +319,14 @@ span {
 #rsvp {
    background-color: rgb(235, 197, 154);
 }
+
 /*Footer Section*/
 footer {
-  background-color:  rgb(210, 176, 138);
-   
- 
+   background-color: rgb(210, 176, 138);
+
+
 }
+
 .footer {
    display: flex;
    align-items: baseline;
@@ -330,12 +337,13 @@ footer {
 #social-networks {
    display: flex;
    list-style-type: none;
-   
+
 }
 
 #social-networks i {
    padding-right: 15px;
-   color: #3a3a3a;;
+   color: #3a3a3a;
+   ;
    font-size: 24px;
 }
 
@@ -353,19 +361,6 @@ footer {
       text-align: center;
    }
 
-   .our-story-message1 h2,
-   .our-story-message2 h2 {
-      margin: 10px 5px 5px 5px;
-   }
-
-   .our-story-message1 p,
-   .our-story-message2 p {
-      padding: 2px 10px;
-      text-align: justify;
-   }
-
-
-
 }
 
 
@@ -373,23 +368,19 @@ footer {
 @media screen and (min-width: 768px) {
 
 
-
-   #menu li {
-      font-size: 26px;
-   }
-
-   .nav-bar-label {
-      margin-right: 38px;
-   }
-
    /* Make "Amanda & Marcus" heading bigger*/
    .couple-text {
-      font-size: 3rem;
-
+      font-size: 220%;
+      letter-spacing: 4px;
+      top: 70%;
+      padding-left: 10%;
    }
 
    .wedding-date {
-      font-size: 1rem;
+      font-size: 10px;
+      letter-spacing: 2px;
+
+
    }
 
    .our-story {
@@ -475,10 +466,11 @@ footer {
       padding: 0 15px;
 
    }
+
    .our-story-message2 h2,
-   .our-story-message1 h2{
+   .our-story-message1 h2 {
       justify-self: center;
-      
+
    }
 
    .nav-bar-label {
@@ -511,36 +503,36 @@ footer {
       text-align: justify;
    }
 
-      .our-story-message2 {
-         text-align: justify;
-         padding: 0 10px;
-         margin-bottom: 10px;
+   .our-story-message2 {
+      text-align: justify;
+      padding: 0 10px;
+      margin-bottom: 10px;
 
-      }     
+   }
+
+
+}
+
+/*Media query: Desktop with larger screen (1250px and up)*/
+@media screen and (min-width: 1250px) {
+
+   .photos {
+      column-count: 4;
+      column-gap: 30px;
+      line-height: 4;
+      padding: 0 30px;
+   }
+
+   /*Make the hero image position better*/
+   #home {
+      background: url("../images/hero-image2.jpg") no-repeat 40% 5%/cover;
+      background-attachment: fixed;
 
 
    }
 
-   /*Media query: Desktop with larger screen (1250px and up)*/
-   @media screen and (min-width: 1250px) {
+   .couple-text {
+      font-size: 4rem;
 
-      .photos {
-         column-count: 4;
-         column-gap: 30px;
-         line-height: 4;
-         padding: 0 30px;
-      }
-
-      /*Make the hero image position better*/
-      #home {
-         background: url("../images/hero-image2.jpg") no-repeat 40% 5%/cover;
-         background-attachment: fixed;
-
-
-      }
-
-      .couple-text {
-         font-size: 4rem;
-
-      }
-   } 
+   }
+}
