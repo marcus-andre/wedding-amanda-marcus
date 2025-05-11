@@ -141,7 +141,6 @@ span {
    flex-direction: column;
    font-family: "Montserrat", sans-serif;
 
-
 }
 
 #welcome {
@@ -187,6 +186,7 @@ span {
    letter-spacing: 2px;
    line-height: 20px;
    font-size: 12px;
+   padding: 5px;
    color: #312D24;
  
 }
@@ -238,7 +238,7 @@ span {
 /*Details Section*/
 #details {
 
-
+   background-color: rgb(200, 168, 130);
    font-family: "Montserrat", sans-serif;
    display: flex;
    flex-direction: column;
@@ -257,14 +257,10 @@ span {
    text-transform: uppercase;
    font-weight: 400;
 }
-.event-frame {
-   background-color: rgb(190, 160, 123);
-   line-height: 0;
-   margin: 40px 0;
-}
+
 .events-img {
    width: 100%;
-   padding: 5px;
+   padding: 15px;
    
 }
 
@@ -313,7 +309,7 @@ span {
 }
    iframe {
       border: 0;
-      padding: 0 5px;
+      padding: 0 15px;
 }
    
 /*Gallery Section*/
