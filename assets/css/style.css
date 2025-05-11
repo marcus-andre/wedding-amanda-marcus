@@ -200,10 +200,7 @@ span {
 }
 
 #bottom-border {
-   border-bottom: 0.8px solid rgba(179, 179, 179, 0.73);
-   padding-bottom: 30px;
-   margin-bottom: 20px;
-   
+    margin-bottom: 25px;   
 }
 .our-story-message1 {
    padding: 10px 15px;
@@ -420,6 +417,10 @@ iframe {
 /*Media Query: laptop and desktop (992px and up)*/
 @media screen and (min-width: 992px) {
 
+   header>a {
+      font-size: 18px;
+   }
+
    .photos {
       column-count: 3;
       column-gap: 1;
@@ -437,56 +438,66 @@ iframe {
    /*Make the list show in a row instead of colunm*/
    #menu {
       display: flex;
+     justify-content: end;
+     border: none; 
    }
 
-
+   #menu li {
+      padding: 10px;
+   }
    #menu a {
-      font-size: 2rem;
+      font-size: 160%;
       padding: 0 15px;
 
    }
+ /* Make "Amanda & Marcus" heading bigger*/
+   .couple-text {
+      font-size: 350%;
+      letter-spacing: 3.2px ;
+   }
+
+
 
    .our-story-message2 h2,
    .our-story-message1 h2 {
-      justify-self: center;
+      justify-self: start;
 
+   }
+
+   .wedding-date {
+      font-size:18px;
    }
 
    .nav-bar-label {
       display: none;
    }
 
-   /* Make "Amanda & Marcus" heading bigger*/
-   .couple-text {
-      font-size: 3.8rem;
-   }
+  
 
-   .wedding-date {
-      font-size: 1.4rem;
-   }
 
    .our-story {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      
    }
 
-   #our-story p {
+   .our-story p {
       width: 100%;
+      font-size: 14px;
+     
    }
 
    .our-story-message1 {
 
       padding: 0 10px;
       margin: 0;
-      text-align: justify;
+   
    }
 
    .our-story-message2 {
-      text-align: justify;
+     
       padding: 0 10px;
       margin-bottom: 10px;
-
+   
    }
 
 
