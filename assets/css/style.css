@@ -28,6 +28,7 @@
 
 .text-form-style {
    font-size: 14px;
+   font-family: "Lato", sans-serif;
    color: #1a1813;
     color: rgb(244, 228, 209);
 }
@@ -352,6 +353,9 @@ iframe {
 .form-heading {
    font-size: 20px;
    font-family: "Lato", sans-serif;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: 900;
    padding-bottom: 20px;
    letter-spacing: 2px;
    line-height: 30px;
@@ -363,6 +367,7 @@ iframe {
    display: flex;
    flex-direction: column;
   
+  
 }
 
 .rsvp-heading>h2 {
@@ -370,6 +375,7 @@ iframe {
    padding: 40px 20px;
    letter-spacing: 2px;
    line-height: 20px;
+    font-style: italic;
 }
 
 .rsvp-heading>h3 {
@@ -418,6 +424,8 @@ input[type="radio"] {
    padding: 15px 32px;
    font-size: 100%;
    margin: 20px;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
 }
 
 .dropdown-adults {
@@ -427,6 +435,11 @@ input[type="radio"] {
    margin-top: 10px;
    color: rgb(71, 67, 61);
 }
+
+.align-button {
+   text-align: center;
+}
+
 /*Footer Section*/
 footer {
    background-color: rgb(210, 176, 138);
@@ -509,6 +522,8 @@ footer {
       width: 50%;
       padding: 10px 15px;
    }
+
+
 
 }
 

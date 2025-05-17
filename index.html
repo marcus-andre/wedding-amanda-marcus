@@ -192,7 +192,7 @@
             <form action="https://formdump.codeinstitute.net" id="signup-form" method="POST">
                 <h2 class="form-heading"> Confirm your presence!</h2>
                 <!--First name, phone number and email address  presence confirmation-->
-                <label for="first-name text-form-style">Your full name</label>
+                <label class="text-form-style" for="first-name">Your full name</label>
                 <input class="text-input" type="text" name="full-name" id="full-name" required><br>
                 <!--Radio buttons-->
                 <div class="radio-btn text-form-style">
@@ -209,8 +209,8 @@
                 </div>
                 <!--dropdown menu for how many adults-->
                 <div class="dropdown-adults">
-                    <label for="number-of-adults">How many adults?</label>
-                    <select id="number-of-adults" name="number-of-adults">
+                    <label class="text-form-style" for="number-of-adults">How many adults?</label>
+                    <select id="number-of-adults" name="number-of-adults" required>
                         <option value="one">1</option>
                         <option value="two">2</option>
                         <option value="three">3</option>
@@ -225,7 +225,9 @@
                 <label class="text-form-style" for="tel-number">Phone number</label>
                 <input type="tel" name="tel-number" id="tel-number" class="text-input" required />
                 <!--Submit button-->
-                <button type="submit" class="confirm-button">Confirm</button>
+                <div class="align-button">
+                    <button type="submit" class="confirm-button text-form-style">Confirm</button>
+                </div>
             </form>
 
         </section>
