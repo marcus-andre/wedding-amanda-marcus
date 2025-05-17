@@ -7,6 +7,24 @@
    box-sizing: border-box;
 }
 
+/*Font sizes of the paragraphs and headdings*/
+  .font-size-s {
+   font-size: 12px;
+   color: #312D24;
+   font-weight: 400;
+     }
+
+  .font-size-m {
+font-size: 14px;
+color: #312D24;
+font-weight: 400;
+  }
+
+  .font-size-l {
+   font-size: 16px;
+   color: #312D24;
+   font-weight: 400;
+  }
 
 body {
    min-height: 100vh;
@@ -16,6 +34,7 @@ body {
 }
 h1 {
    font-size: 16px;
+   font-weight: 400;
    text-align: center;
    text-transform: uppercase;
    text-decoration: underline;
@@ -73,10 +92,7 @@ nav {
 
 
 .nav-bar-label {
-   /* color: rgb(193, 247, 249); */
-
-   border-radius: 20%;
-   color: #312D24;
+     color: #312D24;
    font-size: 24px;
    margin: 2px 5px;
 }
@@ -123,7 +139,7 @@ span {
    letter-spacing: 2px;
    line-height: 28px;
    text-align: start;
-   color: #292a26;
+   color: #312D24;
    top: 37%;
 
 }
@@ -146,9 +162,7 @@ span {
 #welcome {
    margin-top: 20px;
    text-align: center;
-   color: #312D24;
-
-}
+   }
 
 #welcome div {
    padding: 20px 15px;
@@ -156,14 +170,11 @@ span {
 
 .welcome-title {
    font-family: "Lato", sans-serif;
-   font-size: 16px;
    font-weight: 400;
 
 }
 
 #welcome h2 {
-
-   font-size: 12px;
    letter-spacing: 2px;
    line-height: 20px;
    font-weight: 400;
@@ -185,18 +196,13 @@ span {
    font-family: "Montserrat", sans-serif; 
    letter-spacing: 2px;
    line-height: 20px;
-   font-size: 12px;
-   padding: 5px;
-   color: #312D24;
- 
+   padding: 5px; 
 }
 
 .our-story h2 {
    font-family: "Lato", sans-serif;
-   font-size: 14px;
    letter-spacing: 2px;
-   color: #312D24;
-   margin: 15px 0;
+    margin: 15px 0;
 }
 
 #bottom-border {
@@ -245,8 +251,6 @@ span {
 
 #brief-msg {
    font-family:"Lato", sans-serif;
-   color:  #312D24;;
-   font-size: 12px;
    letter-spacing: 2px;
    line-height: 20px;
    padding: 60px 15px;
@@ -274,14 +278,13 @@ span {
 #ceremony-title h2,
    #celebration-title h2 {
   
-   font-size: 16px;
+  
    font-family: "Lato", sans-serif;
  
 }
 
 .text-details {
-   font-size: 12px;
-   line-height: 20px;
+     line-height: 20px;
    letter-spacing: 2px;
    text-align: start;
    padding: 10px 15px;
@@ -293,7 +296,6 @@ span {
    text-align: start;
    line-height: 20px;
    letter-spacing: 2px;
-   font-size: 12px;
    padding: 0 15px;
    padding-bottom: 30px;
 }
@@ -301,8 +303,6 @@ span {
 .where-when h3 {
    padding: 10px 0;
    font-family: "Lato", sans-serif;
-   font-size: 14px;
-
 }
    iframe {
       border: 0;
@@ -310,18 +310,7 @@ span {
 }
    
 /*Gallery Section*/
-#gallery>h2 {
-   border-top: 0.8px solid rgba(179, 179, 179, 0.73);
-   margin: 10px 0;
-   padding-top: 20px;
 
-}
-
-#gallery h2 {
-   font-size: 16px;
-   text-align: center;
-   color: #312D24;
-}
 
 .photos img {
    width: 100%;
@@ -359,8 +348,7 @@ footer {
 
 #social-networks i {
    padding-right: 15px;
-   color: #3a3a3a;
-   ;
+   color: #312D24;
    font-size: 24px;
 }
 
@@ -412,6 +400,11 @@ iframe {
   padding-bottom: 30px;
 }
 
+.image img {
+   width: 100%;
+   padding: 10px 15px;
+}
+
 }
 
 /*Media Query: laptop and desktop (992px and up)*/
@@ -456,7 +449,9 @@ iframe {
       letter-spacing: 3.2px ;
    }
 
-
+   #brief-msg {
+      padding:60px 80px;
+   }
 
    .our-story-message2 h2,
    .our-story-message1 h2 {
@@ -465,27 +460,40 @@ iframe {
    }
 
    .wedding-date {
-      font-size:18px;
+      font-size:12px;
    }
 
    .nav-bar-label {
       display: none;
    }
+/*Font sizes of the paragraphs and headdings*/
+  .font-size-s {
+   font-size: 14px;
+   letter-spacing: 2.2px;
+  }
 
-  
+  .font-size-m {
+font-size: 16px;
+letter-spacing: 2.2px;
+  }
 
+  .font-size-l {
+   font-size: 18px;
+   letter-spacing: 2.2px;
+  }
+
+  h1 {
+   font-size: 18px;
+   letter-spacing: 2.2px;
+   
+  }
 
    .our-story {
       display: flex;
       
    }
 
-   .our-story p {
-      width: 100%;
-      font-size: 14px;
-     
-   }
-
+  
    .our-story-message1 {
 
       padding: 0 10px;
@@ -500,6 +508,10 @@ iframe {
    
    }
 
+   .text-details  {
+      padding: 0 100px;
+      text-align: center;
+   }
 
 }
 
