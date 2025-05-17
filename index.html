@@ -32,7 +32,7 @@
                 <li><a href="#our-story">OurStory</a></li>
                 <li><a href="#details">Details</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="">RSVP</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
             </ul>
         </nav>
     </header>
@@ -184,32 +184,46 @@
             </div>
         </section>
         <section id="rsvp">
-            <h1>RSVP</h1>
+            <div class="rsvp-heading">
+                <h3>RSVP</h3>
+                <h2 class="text-form-style">Be part of our love story, confirm your presence.</h2>
 
+            </div>
             <form action="https://formdump.codeinstitute.net" id="signup-form" method="POST">
                 <h2 class="form-heading"> Confirm your presence!</h2>
                 <!--First name, phone number and email address  presence confirmation-->
-                <label class="yes font-size-m" for="first-name">Your full name</label>
+                <label for="first-name text-form-style">Your full name</label>
                 <input class="text-input" type="text" name="full-name" id="full-name" required><br>
                 <!--Radio buttons-->
-                <div class="radio-btn">
-                    <p class="font-size-m">Are you coming to our wedding?</p>
-                    
-                        
-                        <div class="radio-btn-alignment">
-                            <label  class="yes font-size-m" for="yes">Yes</label>
-                            <input type="radio" name="presence-confirmation" id="yes" value="yes" required>
-                        </div>
-                    
+                <div class="radio-btn text-form-style">
+                    <p>Are you coming to our wedding?</p>
                     <div class="radio-btn-alignment">
-                        <label class="font-size-m" for="no">No</label>
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="presence-confirmation" id="yes" value="yes" required>
+                    </div>
+
+                    <div class="radio-btn-alignment">
+                        <label for="no">No</label>
                         <input type="radio" name="presence-confirmation" value="no" id="no">
                     </div>
                 </div>
-                <label class="font-size-m" for="email-address">Email Address</label>
+                <!--dropdown menu for how many adults-->
+                <div class="dropdown-adults">
+                    <label for="number-of-adults">How many adults?</label>
+                    <select id="number-of-adults" name="number-of-adults">
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="6-plus">6+</option>
+                    </select>
+                </div>
+
+                <label class="text-form-style" for="email-address">Email Address</label>
                 <input type="email" name="email-address" id="email-address" class="text-input" required><br>
-                <label class="font-size-m" for="tel-number">Phone number</label>
-                <input type="tel" name="tel-number" id="tel-number" class="text-input" required/>
+                <label class="text-form-style" for="tel-number">Phone number</label>
+                <input type="tel" name="tel-number" id="tel-number" class="text-input" required />
                 <!--Submit button-->
                 <button type="submit" class="confirm-button">Confirm</button>
             </form>
