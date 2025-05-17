@@ -6,23 +6,36 @@
    padding: 0;
    box-sizing: border-box;
 }
+/*Reseting bootstrap defaut classes value*/
+.h1,h2,h3 {
+   font-size: inherit;
+   color: inherit;
+}
 
 /*Font sizes of the paragraphs, headdings and forms text*/
-.font-size-s {
+
+.font-size-xs {
    font-size: 12px;
    color: #1a1813;
+   font-weight: 300;
+}
 
+.font-size-s {
+   font-size: 14px;
+   color: #1a1813;
+   font-weight: 300;
 }
 
 .font-size-m {
-   font-size: 14px;
+   font-size: 16px;
    color: #1a1813;
-   
+   font-weight: 400;   
 }
 
 .font-size-l {
-   font-size: 16px;
+   font-size: 18px;
    color: #1a1813;
+   font-weight: 400;
 
 }
 
@@ -41,12 +54,15 @@ body {
 }
 
 h1 {
+   height: 50px;
    font-size: 16px;
    font-weight: 400;
    text-align: center;
    text-transform: uppercase;
    text-decoration: underline;
    margin: 30px 0;
+   color:#040403;
+   font-weight: 500;
 }
 
 /*Header*/
@@ -170,9 +186,16 @@ span {
 
 }
 
+.space {
+   height: 100px;
+}
+
 #welcome {
    margin-top: 20px;
    text-align: center;
+   letter-spacing: 2px;
+   
+   
 }
 
 #welcome div {
@@ -181,16 +204,28 @@ span {
 
 .welcome-title {
    font-family: "Lato", sans-serif;
+   text-transform: uppercase;
    font-weight: 400;
-
+   color:#040403;;
+   
 }
 
-#welcome h2 {
-   letter-spacing: 2px;
+.welcome-mid-text {
+   font-weight: 300;
+   text-align: center; 
+   padding: 0 10px;
    line-height: 20px;
-   font-weight: 400;
-   text-transform: uppercase;
+}
 
+.welcome-end-text {
+   text-align: justify; 
+   padding: 20px 0px;
+   font-weight: 400;
+   line-height: 2;
+}
+
+.wcm-end  {
+   padding: 20px 15px 20px 15px;
 }
 
 #svg-mark {
