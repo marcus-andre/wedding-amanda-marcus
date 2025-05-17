@@ -71,8 +71,6 @@ header {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   /* background: linear-gradient(265deg, #b9e1f6, rgb(90, 172, 227), #b4e1f5);  */
-   /* background: linear-gradient(248deg, #f9fafa, rgb(171, 218, 229), rgb(255, 255, 255)); */
    background-color: rgb(235, 197, 154);
    box-shadow: 0 0.3px 0.8px #858484;
    position: fixed;
@@ -89,7 +87,6 @@ header>a p {
 }
 
 nav {
-   /* background: linear-gradient(274deg, #f9fafa, rgb(171, 218, 229), rgb(255, 255, 255)); */
    background-color: rgb(235, 197, 154);
    width: 100%;
    position: absolute;
@@ -139,7 +136,6 @@ header a {
 
 /*main*/
 main {
-   /* background: linear-gradient(250deg, #f9fafa, rgb(48, 173, 207), rgb(255, 255, 255)); */
    background-color: rgb(235, 197, 154);
    flex: 1 0 auto;
    display: flex;
@@ -443,12 +439,12 @@ iframe {
 .radio-btn-alignment {
    display: flex;
    margin-top: 10px;
-   
+   align-items: center;
 }
 
 input[type="radio"] {
    margin-left: 15px;
-   /* margin-bottom: 1px; */
+  
 }
 
 .confirm-button {
@@ -665,11 +661,21 @@ footer {
       margin-bottom: 10px;
 
    }
-
+   /*Detais*/
    .text-details {
       padding: 0 100px;
       text-align: center;
    }
+
+   /*form*/
+     .text-input:hover {
+    border-color: #dcac4c;
+}
+
+.confirm-button:hover {
+  background-color: rgb(244, 228, 209);
+  color: rgb(92, 77, 60);
+}
 
 }
 
