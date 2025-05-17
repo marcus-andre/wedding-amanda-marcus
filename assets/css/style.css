@@ -8,23 +8,24 @@
 }
 
 /*Font sizes of the paragraphs and headdings*/
-  .font-size-s {
+.font-size-s {
    font-size: 12px;
-   color: #312D24;
-   font-weight: 400;
-     }
+   color: #1a1813;
 
-  .font-size-m {
-font-size: 14px;
-color: #312D24;
-font-weight: 400;
-  }
+}
 
-  .font-size-l {
+.font-size-m {
+   font-size: 14px;
+   color: #1a1813;
+   ;
+
+}
+
+.font-size-l {
    font-size: 16px;
-   color: #312D24;
-   font-weight: 400;
-  }
+   color: #1a1813;
+
+}
 
 body {
    min-height: 100vh;
@@ -32,6 +33,7 @@ body {
    flex-direction: column;
    font-family: "Montserrat", sans-serif;
 }
+
 h1 {
    font-size: 16px;
    font-weight: 400;
@@ -40,6 +42,7 @@ h1 {
    text-decoration: underline;
    margin: 30px 0;
 }
+
 /*Header*/
 header {
    padding: 3px 10px;
@@ -92,7 +95,7 @@ nav {
 
 
 .nav-bar-label {
-     color: #312D24;
+   color: #312D24;
    font-size: 24px;
    margin: 2px 5px;
 }
@@ -139,7 +142,7 @@ span {
    letter-spacing: 2px;
    line-height: 28px;
    text-align: start;
-   color: #312D24;
+   color: #1a1813;
    top: 37%;
 
 }
@@ -162,7 +165,7 @@ span {
 #welcome {
    margin-top: 20px;
    text-align: center;
-   }
+}
 
 #welcome div {
    padding: 20px 15px;
@@ -186,6 +189,7 @@ span {
    text-align: center;
    padding: 40px 0;
 }
+
 .our-story {
    display: flex;
    flex-direction: column;
@@ -193,21 +197,22 @@ span {
 }
 
 .our-story p {
-   font-family: "Montserrat", sans-serif; 
+   font-family: "Montserrat", sans-serif;
    letter-spacing: 2px;
    line-height: 20px;
-   padding: 5px; 
+   padding: 5px;
 }
 
 .our-story h2 {
    font-family: "Lato", sans-serif;
    letter-spacing: 2px;
-    margin: 15px 0;
+   margin: 15px 0;
 }
 
 #bottom-border {
-    margin-bottom: 25px;   
+   margin-bottom: 25px;
 }
+
 .our-story-message1 {
    padding: 10px 15px;
    text-align: start;
@@ -216,8 +221,8 @@ span {
 .our-story-message2 {
    text-align: start;
    padding: 0px 15px;
-   
- }
+
+}
 
 .image {
    display: flex;
@@ -245,12 +250,12 @@ span {
    font-family: "Montserrat", sans-serif;
    display: flex;
    flex-direction: column;
- 
+
 
 }
 
 #brief-msg {
-   font-family:"Lato", sans-serif;
+   font-family: "Lato", sans-serif;
    letter-spacing: 2px;
    line-height: 20px;
    padding: 60px 15px;
@@ -262,29 +267,27 @@ span {
 .events-img {
    width: 100%;
    padding: 15px;
-   
+
 }
 
-#ceremony-title, #celebration-title {
+#ceremony-title,
+#celebration-title {
    display: flex;
    width: 65%;
    justify-content: space-around;
-  align-items:baseline;
-  padding: 15px 15px; 
-   
- 
+   align-items: baseline;
+   padding: 15px 15px;
+
+
 }
 
 #ceremony-title h2,
-   #celebration-title h2 {
-  
-  
+#celebration-title h2 {
    font-family: "Lato", sans-serif;
- 
 }
 
 .text-details {
-     line-height: 20px;
+   line-height: 20px;
    letter-spacing: 2px;
    text-align: start;
    padding: 10px 15px;
@@ -304,11 +307,12 @@ span {
    padding: 10px 0;
    font-family: "Lato", sans-serif;
 }
-   iframe {
-      border: 0;
-      padding: 0 15px;
+
+iframe {
+   border: 0;
+   padding: 0 15px;
 }
-   
+
 /*Gallery Section*/
 
 
@@ -324,6 +328,65 @@ span {
 /*RSVP Section*/
 #rsvp {
    background-color: rgb(235, 197, 154);
+}
+
+form {
+   padding: 50px 40px;
+   background-color: rgba(86, 86, 86, 0.6);
+   text-align: start;
+   letter-spacing: 2px;
+   line-height: 20px;
+}
+
+.form-heading {
+   font-size: 22px;
+   font-family: "Lato", sans-serif;
+   padding-bottom: 20px;
+   letter-spacing: 2px;
+   line-height: 30px;
+
+}
+
+/*Taken from love-running*/
+.text-input {
+   color: #1a1813;
+   background: transparent;
+   border: 1px solid rgb(244, 228, 209);
+   border-radius: 2px;
+   height: 25px;
+   width: 100%;
+   margin: 5px 0 20px 0;
+   padding: 0 5px;
+
+}
+
+.radio-btn {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin-bottom: 10px;
+
+}
+
+.radio-btn-alignment {
+   display: flex;
+   margin: 5px 0;
+   
+}
+
+input[type="radio"] {
+   margin-left: 15px;
+   /* margin-bottom: 1px; */
+}
+
+.confirm-button {
+  
+   border-radius: 2.5px;
+   background-color: rgb(92, 77, 60);
+   color: rgb(244, 228, 209);
+   padding: 15px 32px;
+   font-size: 100%;
+   margin: 20px;
 }
 
 /*Footer Section*/
@@ -385,25 +448,26 @@ footer {
       font-size: 10px;
       letter-spacing: 2px;
    }
-   
- #ceremony-title, #celebration-title {
-   width: 20%;
-   padding: 0 0 20px 0;
- }
+
+   #ceremony-title,
+   #celebration-title {
+      width: 20%;
+      padding: 0 0 20px 0;
+   }
 
 
 
-iframe {
-  width: 100%;
-  height: 300px;
-  padding-top: 10px;
-  padding-bottom: 30px;
-}
+   iframe {
+      width: 100%;
+      height: 300px;
+      padding-top: 10px;
+      padding-bottom: 30px;
+   }
 
-.image img {
-   width: 100%;
-   padding: 10px 15px;
-}
+   .image img {
+      width: 100%;
+      padding: 10px 15px;
+   }
 
 }
 
@@ -431,26 +495,28 @@ iframe {
    /*Make the list show in a row instead of colunm*/
    #menu {
       display: flex;
-     justify-content: end;
-     border: none; 
+      justify-content: end;
+      border: none;
    }
 
    #menu li {
       padding: 10px;
    }
+
    #menu a {
       font-size: 160%;
       padding: 0 15px;
 
    }
- /* Make "Amanda & Marcus" heading bigger*/
+
+   /* Make "Amanda & Marcus" heading bigger*/
    .couple-text {
       font-size: 350%;
-      letter-spacing: 3.2px ;
+      letter-spacing: 3.2px;
    }
 
    #brief-msg {
-      padding:60px 80px;
+      padding: 60px 80px;
    }
 
    .our-story-message2 h2,
@@ -460,55 +526,56 @@ iframe {
    }
 
    .wedding-date {
-      font-size:12px;
+      font-size: 12px;
    }
 
    .nav-bar-label {
       display: none;
    }
-/*Font sizes of the paragraphs and headdings*/
-  .font-size-s {
-   font-size: 14px;
-   letter-spacing: 2.2px;
-  }
 
-  .font-size-m {
-font-size: 16px;
-letter-spacing: 2.2px;
-  }
+   /*Font sizes of the paragraphs and headdings*/
+   .font-size-s {
+      font-size: 14px;
+      letter-spacing: 2.2px;
+   }
 
-  .font-size-l {
-   font-size: 18px;
-   letter-spacing: 2.2px;
-  }
+   .font-size-m {
+      font-size: 16px;
+      letter-spacing: 2.2px;
+   }
 
-  h1 {
-   font-size: 18px;
-   letter-spacing: 2.2px;
-   
-  }
+   .font-size-l {
+      font-size: 18px;
+      letter-spacing: 2.2px;
+   }
+
+   h1 {
+      font-size: 18px;
+      letter-spacing: 2.2px;
+
+   }
 
    .our-story {
       display: flex;
-      
+
    }
 
-  
+
    .our-story-message1 {
 
       padding: 0 10px;
       margin: 0;
-   
+
    }
 
    .our-story-message2 {
-     
+
       padding: 0 10px;
       margin-bottom: 10px;
-   
+
    }
 
-   .text-details  {
+   .text-details {
       padding: 0 100px;
       text-align: center;
    }

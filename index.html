@@ -119,7 +119,8 @@
                     <div>
                         <img class="events-img" src="./assets/images/ceremony-img.webp" alt="A beautiful church">
                     </div>
-                    <p class="text-details font-size-s">The ceremony the ceremony will take place at the Parish of São Paulo Apóstolo. It's going to be very hot. Don't forget to bring your sunscreen</p>
+                    <p class="text-details font-size-s">The ceremony the ceremony will take place at the Parish of São
+                        Paulo Apóstolo. It's going to be very hot. Don't forget to bring your sunscreen</p>
                 </div>
                 <div class="where-when">
                     <h3 class="font-size-m">Where & When</h3>
@@ -184,6 +185,35 @@
         </section>
         <section id="rsvp">
             <h1>RSVP</h1>
+
+            <form action="https://formdump.codeinstitute.net" id="signup-form" method="POST">
+                <h2 class="form-heading"> Confirm your presence!</h2>
+                <!--First name, phone number and email address  presence confirmation-->
+                <label class="yes font-size-m" for="first-name">Your full name</label>
+                <input class="text-input" type="text" name="full-name" id="full-name" required><br>
+                <!--Radio buttons-->
+                <div class="radio-btn">
+                    <p class="font-size-m">Are you coming to our wedding?</p>
+                    
+                        
+                        <div class="radio-btn-alignment">
+                            <label  class="yes font-size-m" for="yes">Yes</label>
+                            <input type="radio" name="presence-confirmation" id="yes" value="yes" required>
+                        </div>
+                    
+                    <div class="radio-btn-alignment">
+                        <label class="font-size-m" for="no">No</label>
+                        <input type="radio" name="presence-confirmation" value="no" id="no">
+                    </div>
+                </div>
+                <label class="font-size-m" for="email-address">Email Address</label>
+                <input type="email" name="email-address" id="email-address" class="text-input" required><br>
+                <label class="font-size-m" for="tel-number">Phone number</label>
+                <input type="tel" name="tel-number" id="tel-number" class="text-input" required/>
+                <!--Submit button-->
+                <button type="submit" class="confirm-button">Confirm</button>
+            </form>
+
         </section>
 
 
@@ -228,4 +258,3 @@
 </body>
 
 </html>
-
