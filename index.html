@@ -17,8 +17,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
 
+    <!--Bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    
 
 <body>
 
@@ -52,9 +54,43 @@
 
         <!-- Our Story section with some brief about the couple-->
         <section id="our-story">
+            <div>
+                    <h2 class="countdown-title font-size-s">Countdown to our wedding</h2>
+                </div>
+            <!--Countdown Timer-->
+            <div class="container">
+                <div  class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div id="card" class="card">
 
+                            <div class="card-body">
+                                <div id="row" class="row text-center">
+                                    <div id="block-1" class="col-3">
+                                        <h3 id="days" class="display-2">378</h3>
+                                        <p>Days</p>
+                                    </div>
+                                    <div id="block-2" class="col-3">
+                                        <h3 id="hours" class="display-2">23</h3>
+                                        <p>Hours</p>
+                                    </div>
+                                    <div id="block-3" class="col-3">
+                                        <h3 id="minutes" class="display-2">0</h3>
+                                        <p>Minutes</p>
+                                    </div>
+                                    <div id="block-4" class="col-3">
+                                        <h3 id="seconds" class="display-2">02</h3> 
+                                        <p>Seconds</p>                                       
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="space"></div>
             <div id="welcome">
+
                 <div>
                     <h2 class="welcome-title font-size-s">Welcome to our Website</h2>
                 </div>
@@ -63,7 +99,7 @@
                         dreams and sharing
                         our values.</h2>
                 </div>
-                
+
             </div>
             <div id="svg-mark">
                 <svg viewBox="0 0 76 10" fill="none" xmlns="http://www.w3.org/2000/svg" width="76" height="10">
@@ -73,14 +109,14 @@
                 </svg>
             </div>
             <div class="wcm-end">
-                    <h2 class="welcome-end-text font-size-xs">Here we will tell you, dear friends and family, the most
-                        important moments of our love story.
-                        The countdown begins, the butterflies in our stomach and all the anxiety of the most expected
-                        day of our lives fill us with joy at having you by our side. Let's go together on this great
-                        dream. The day when we will unite our souls and bodies forever, our wedding day.</h2>
-                </div>
+                <h2 class="welcome-end-text font-size-xs">Here we will tell you, dear friends and family, the most
+                    important moments of our love story.
+                    The countdown begins, the butterflies in our stomach and all the anxiety of the most expected
+                    day of our lives fill us with joy at having you by our side. Let's go together on this great
+                    dream. The day when we will unite our souls and bodies forever, our wedding day.</h2>
+            </div>
             <div class="our-story">
-                <h1>Our Story</h1>
+                <h1 class="font-size-l">Our Story</h1>
                 <div class="our-story-message1">
                     <h2 class="font-size-m">Two Years Apart.</h2>
                     <p class="font-size-s">We always put God first and we were able to make a
@@ -282,9 +318,42 @@
 
     <!--Font Awesome Kit-->
     <script src="https://kit.fontawesome.com/c9d3772848.js" crossorigin="anonymous"></script>
+    <!--script taken from https://bootstrapexamples.com/@moana-silva/countdown-timer/fullscreen-preview-->
+    <script>
+        // Set the date we're counting down to (1 month from now)
+        const countDownDate = new Date().getTime() + (378 * 24 * 60 * 60 * 1000);
 
-   
-   
+        // Update the countdown every 1 second
+        const x = setInterval(function () {
+            // Get today's date and time
+            const now = new Date().getTime();
+
+            // Find the distance between now and the countdown date
+            const distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result
+            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+
+            // If the countdown is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("days").innerHTML = "00";
+                document.getElementById("hours").innerHTML = "00";
+                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById("seconds").innerHTML = "00";
+            }
+        }, 1000);
+    </script>
+
 </body>
 
 </html>

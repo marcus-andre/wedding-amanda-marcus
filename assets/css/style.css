@@ -6,11 +6,6 @@
    padding: 0;
    box-sizing: border-box;
 }
-/*Reseting bootstrap defaut classes value*/
-.h1,h2,h3 {
-   font-size: inherit;
-   color: inherit;
-}
 
 /*Font sizes of the paragraphs, headdings and forms text*/
 
@@ -29,12 +24,12 @@
 .font-size-m {
    font-size: 16px;
    color: #1a1813;
-   font-weight: 400;   
+   font-weight: 400;
 }
 
 .font-size-l {
    font-size: 18px;
-   color: #1a1813;
+   color: #040403;
    font-weight: 400;
 
 }
@@ -43,7 +38,7 @@
    font-size: 14px;
    font-family: "Lato", sans-serif;
    color: #1a1813;
-    color: rgb(244, 228, 209);
+   color: rgb(244, 228, 209);
 }
 
 body {
@@ -54,15 +49,14 @@ body {
 }
 
 h1 {
-   height: 50px;
-   font-size: 16px;
+  
    font-weight: 400;
    text-align: center;
    text-transform: uppercase;
    text-decoration: underline;
    margin: 30px 0;
-   color:#040403;
-   font-weight: 500;
+   color: #040403;
+   
 }
 
 /*Header*/
@@ -182,45 +176,116 @@ span {
 
 }
 
+#row {
+   align-items: center;
+   justify-content: center;
+   width: 250px;
+   margin: 0px auto;
+}
+
+#card {
+   margin-top: 40px;
+   border: none;
+}
+
+.card-body {
+   display: flex;
+   background-color: rgb(235, 197, 154);
+   flex-wrap: wrap;
+}
+
+#block-1,
+#block-2,
+#block-3,
+#block-4 {
+   display: flex;
+   flex-direction: column;
+      margin: 0 12px;
+      padding: 0;
+      height: 75px;
+   flex: 1 0 auto;
+   align-items: center;
+   
+
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+    margin: 0;
+   padding: 10px;
+   width: 100%;
+    height: 75px;
+   background-color: rgba(164, 116, 48, 0.7);
+   border: 1px solid rgba(223, 223, 222, 0.8);
+   border-radius: 4px;
+   vertical-align: middle;
+}
+
+#row p {
+   
+   font-size: 10px;
+   margin: 4px 0 0 0;
+}
+
 .space {
-   height: 100px;
+   height: 50px;
+
 }
 
 #welcome {
    margin-top: 20px;
    text-align: center;
    letter-spacing: 2px;
-   
-   
+
+
 }
 
 #welcome div {
    padding: 20px 15px;
 }
 
+.countdown-title {
+   padding: 60px 60px 0 60px;
+   font-family: "Lato", sans-serif;
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: 400;
+   color: #040403;
+   letter-spacing: 2px;
+}
+
 .welcome-title {
    font-family: "Lato", sans-serif;
    text-transform: uppercase;
    font-weight: 400;
-   color:#040403;;
-   
+   color: #040403;
+   ;
+
 }
 
 .welcome-mid-text {
    font-weight: 300;
-   text-align: center; 
+   text-align: center;
    padding: 0 10px;
    line-height: 20px;
+
 }
 
 .welcome-end-text {
-   text-align: justify; 
+   text-align: justify;
    padding: 20px 0px;
    font-weight: 400;
    line-height: 2;
+   letter-spacing: 2px;
 }
 
-.wcm-end  {
+.wcm-end {
    padding: 20px 15px 20px 15px;
 }
 
@@ -298,6 +363,7 @@ span {
    letter-spacing: 2px;
    line-height: 20px;
    padding: 60px 15px;
+   margin-bottom: 30px;
    text-align: center;
    text-transform: uppercase;
    font-weight: 400;
@@ -366,8 +432,8 @@ iframe {
 
 /*RSVP Section*/
 #rsvp {
-   background: url("../images/form-img.JPEG") no-repeat  50% 100%/cover;
-    padding: 30px 10% 0 10%;
+   background: url("../images/form-img.JPEG") no-repeat 50% 100%/cover;
+   padding: 30px 10% 0 10%;
    flex-grow: 1;
 }
 
@@ -380,7 +446,7 @@ iframe {
    color: rgb(244, 228, 209);
 
 }
- 
+
 .form-heading {
    font-size: 20px;
    font-family: "Lato", sans-serif;
@@ -397,8 +463,8 @@ iframe {
    color: rgb(244, 228, 209);
    display: flex;
    flex-direction: column;
-  
-  
+
+
 }
 
 .rsvp-heading>h2 {
@@ -406,7 +472,7 @@ iframe {
    padding: 40px 20px;
    letter-spacing: 2px;
    line-height: 20px;
-    font-style: italic;
+   font-style: italic;
 }
 
 .rsvp-heading>h3 {
@@ -444,11 +510,11 @@ iframe {
 
 input[type="radio"] {
    margin-left: 15px;
-  
+
 }
 
 .confirm-button {
-  
+
    border-radius: 2.5px;
    background-color: rgb(92, 77, 60);
    color: rgb(244, 228, 209);
@@ -462,6 +528,7 @@ input[type="radio"] {
 .dropdown-adults {
    margin-bottom: 20px;
 }
+
 #number-of-adults {
    margin-top: 10px;
    color: rgb(71, 67, 61);
@@ -661,6 +728,7 @@ footer {
       margin-bottom: 10px;
 
    }
+
    /*Detais*/
    .text-details {
       padding: 0 100px;
@@ -668,14 +736,14 @@ footer {
    }
 
    /*form*/
-     .text-input:hover {
-    border-color: #dcac4c;
-}
+   .text-input:hover {
+      border-color: #dcac4c;
+   }
 
-.confirm-button:hover {
-  background-color: rgb(244, 228, 209);
-  color: rgb(92, 77, 60);
-}
+   .confirm-button:hover {
+      background-color: rgb(244, 228, 209);
+      color: rgb(92, 77, 60);
+   }
 
 }
 
