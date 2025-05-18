@@ -447,6 +447,11 @@ iframe {
 }
 
 /*RSVP Section*/
+
+.rsvp-color-heading {
+   color: #f4e4d1;
+}
+
 #rsvp {
    background: url("../images/form-img.JPEG") no-repeat 50% 100%/cover;
    padding: 30px 10% 0 10%;
@@ -499,7 +504,7 @@ iframe {
 
 /*Taken from love-running*/
 .text-input {
-   color: #1a1813;
+   color: rgb(244, 228, 209);
    background: transparent;
    border: 1px solid rgb(244, 228, 209);
    border-radius: 2px;
@@ -588,10 +593,13 @@ footer {
       line-height: 2;
       padding: 0 15px;
    }
-
+   .photos img {
+      vertical-align: 0;
+   }
    #gallery h2 {
       font-size: 140%;
       text-align: center;
+
    }
 
 }
@@ -614,15 +622,34 @@ footer {
       letter-spacing: 2px;
    }
 
+   .welcome-mid-text {
+      padding: 0 50px;
+      
+   }
+
+   .welcome-end-text {
+      padding: 20px 40px;
+      text-align: start;
+   }
+
+   .our-story-message1,
+   .our-story-message2 {
+      padding: 10px 20px;
+   }
+
+   #brief-msg {
+      padding: 60px 22px;
+   }
+
    #ceremony-title,
    #celebration-title {
-      width: 20%;
-      padding: 0 0 20px 0;
+      width: fit-content;
+      padding: 0 0 20px 20px;
    }
 
    .text-details {
       text-align: center;
-      padding: 0px 100px 30px 100px;
+      padding: 0px 40px 30px 40px;
    }
 
    iframe {
@@ -633,11 +660,24 @@ footer {
    }
 
    .image img {
-      width: 50%;
-      padding: 10px 15px;
+      width: 80%;
+      padding: 10px 20px;
    }
 
+   .events-img {
+      padding: 0 20px 10px 20px;
+   }
 
+   /*Footer*/
+   #social-networks i {
+      padding-right: 30px;
+      font-size: 180%;
+   }
+
+   .logo {
+      font-size: 140%;
+      padding-right: 5px;
+   }
 
 }
 
