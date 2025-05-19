@@ -334,7 +334,7 @@ span {
 .our-story p {
    font-family: "Lato", sans-serif;
    letter-spacing: 2px;
-   line-height: 20px;
+
    padding: 5px;
 }
 
@@ -344,9 +344,6 @@ span {
    margin: 15px 0;
 }
 
-#bottom-border {
-   margin-bottom: 25px;
-}
 
 .our-story-message1 {
    padding: 10px 15px;
@@ -356,6 +353,18 @@ span {
 .our-story-message2 {
    text-align: start;
    padding: 0px 15px;
+
+}
+
+
+
+.bible-verse {
+
+   margin-bottom: 25px;
+   font-weight: 400;
+   text-align: end;
+   font-size: 13px;
+   line-height: normal;
 
 }
 
@@ -429,10 +438,12 @@ span {
    padding: 10px 15px;
    padding-top: 0;
 }
+
 .where-when p {
    margin: 5px 0;
- 
+
 }
+
 .where-when {
 
    text-align: start;
@@ -622,7 +633,7 @@ footer {
 
    /* Make "Amanda & Marcus" heading loos better and bigger*/
    .couple-text {
-      
+
       letter-spacing: 3px;
       left: 10%;
 
@@ -655,8 +666,7 @@ footer {
 
 
 
-
-
+   /*Home Section*/
    /* Make "Amanda & Marcus" heading loos better and bigger*/
    .couple-text {
       font-size: 30px;
@@ -669,21 +679,32 @@ footer {
       font-size: 10px;
    }
 
+   /*Welcome Section*/
    .welcome-mid-text {
       padding: 0 50px;
+
 
    }
 
    .welcome-end-text {
       padding: 20px 40px;
       text-align: start;
+      letter-spacing: 1.5px;
    }
 
+   /*Our Story Section*/
    .our-story-message1,
    .our-story-message2 {
       padding: 10px 20px;
    }
 
+   .bible-verse {
+      width: 60%;
+      float: right;
+
+   }
+
+   /*Details Section*/
    #brief-msg {
       padding: 60px 22px;
    }
@@ -739,6 +760,7 @@ footer {
       padding: 20px;
    }
 
+   /*Home Section*/
    header {
       align-items: baseline;
       padding: 4px 15px 4px 20px;
@@ -750,6 +772,10 @@ footer {
       width: fit-content;
       display: block;
       box-shadow: none;
+   }
+
+   .nav-bar-label {
+      display: none;
    }
 
    /*Make the list show in a row instead of colunm*/
@@ -791,30 +817,35 @@ footer {
       letter-spacing: 1.5px;
    }
 
+   /*Welcome Section*/
+   .welcome-mid-text {
+      font-size: 13px;
+   }
+
+   .welcome-end-text {
+      font-size: 13px;
+      text-align: center;
+      padding: 20px;
+   }
+
    #row {
-       width: 100%;
+      width: 100%;
    }
 
    .fa-clock {
       font-size: 44px;
-         
+
    }
 
+
+   /*Details Section*/
    #brief-msg {
       padding: 60px 80px;
    }
 
-   .our-story-message2 h2,
-   .our-story-message1 h2 {
-      justify-self: start;
-
-   }
 
 
 
-   .nav-bar-label {
-      display: none;
-   }
 
    /*Font sizes of the paragraphs and headdings*/
    .font-size-s {
@@ -838,6 +869,12 @@ footer {
 
    }
 
+   .bible-verse {
+      font-size: 13px;
+
+   }
+
+
    .our-story {
       display: flex;
 
@@ -846,7 +883,7 @@ footer {
 
    .our-story-message1 {
 
-      padding: 0 10px;
+      padding: 0 20px;
       margin: 0;
 
    }
@@ -905,6 +942,17 @@ footer {
       font-size: 16px;
    }
 
-    
- 
+   .font-size-m {
+      font-size: 18px;
+   }
+   .font-size-l {
+      font-size: 20px;
+   }
+
+   .bible-verse{
+font-size: 15px;
+   }
+
+
+
 }
