@@ -12,25 +12,25 @@
 .font-size-xs {
    font-size: 12px;
    color: #1a1813;
-   font-weight: 300;
+   font-weight: 400;
 }
 
 .font-size-s {
    font-size: 14px;
    color: #1a1813;
-   font-weight: 300;
+   font-weight: 400;
 }
 
 .font-size-m {
    font-size: 16px;
    color: #1a1813;
-   font-weight: 400;
+   font-weight: 600;
 }
 
 .font-size-l {
    font-size: 18px;
    color: #040403;
-   font-weight: 400;
+   font-weight: 600;
 
 }
 
@@ -209,7 +209,7 @@ span {
    font-weight: 400;
    color: #040403;
    letter-spacing: 2px;
-   margin: 0 0 20px 0;
+   margin: 20px 0;
 
 }
 
@@ -300,11 +300,9 @@ span {
 }
 
 .welcome-mid-text {
-   font-weight: 300;
    text-align: center;
    padding: 0 10px;
    line-height: 20px;
-
 }
 
 .welcome-end-text {
@@ -482,9 +480,13 @@ iframe {
 }
 
 #rsvp {
-   background: url("../images/form-img.JPEG") no-repeat 50% 100%/cover;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: url("../images/form-img.JPEG") no-repeat 50% 50%/cover;
    padding: 30px 10% 0 10%;
    flex-grow: 1;
+ 
 }
 
 #signup-form {
@@ -494,6 +496,8 @@ iframe {
    letter-spacing: 2px;
    line-height: 20px;
    color: rgb(244, 228, 209);
+  max-width: 500px;
+ 
 
 }
 
@@ -818,12 +822,8 @@ footer {
    }
 
    /*Welcome Section*/
-   .welcome-mid-text {
-      font-size: 13px;
-   }
-
-   .welcome-end-text {
-      font-size: 13px;
+    .welcome-end-text {
+    
       text-align: center;
       padding: 20px;
    }
@@ -848,6 +848,11 @@ footer {
 
 
    /*Font sizes of the paragraphs and headdings*/
+
+.font-size-xs {
+   font-size: 13px;
+}
+
    .font-size-s {
       font-size: 14px;
       letter-spacing: 2.2px;
@@ -901,7 +906,9 @@ footer {
       text-align: center;
    }
 
-   /*form*/
+   /*RSVP form*/
+
+   
    .text-input:hover {
       border-color: #dcac4c;
    }
@@ -953,6 +960,16 @@ footer {
 font-size: 15px;
    }
 
+  
 
+
+}
+/*Media query: XL larger screen (1600px and up)*/
+@media screen and (min-width: 1600px) {
+   /*Fix Form image position*/
+   
+ #rsvp {
+   background: url("../images/form-img.JPEG") no-repeat 50% 35%/cover;
+ }
 
 }
