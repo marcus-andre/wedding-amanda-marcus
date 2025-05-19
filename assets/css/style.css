@@ -70,10 +70,16 @@ header {
 
 
 /*Making M and A show in the same line*/
-header>a p {
-   display: inline;
-   font-family: "Lato", sans-serif;
+.love-logo p {
+   display: inline-block;   
+   margin-bottom: 0;
 }
+
+ .love-logo,
+   .fa-heart {
+      font-size: 20px;
+      font-family: "Lato", sans-serif;
+   }
 
 nav {
    background-color: rgb(235, 197, 154);
@@ -147,11 +153,12 @@ span {
    position: absolute;
    font-family: "Oooh Baby", cursive;
    font-size: 24px;
+   font-weight:600;
    padding-left: 5px;
-   letter-spacing: 2px;
+   letter-spacing: 3px;
    line-height: 28px;
    text-align: start;
-   color: #1a1813;
+   color: #443e2f;
    top: 37%;
 
 }
@@ -161,6 +168,7 @@ span {
    display: inline;
    font-family: "Lato", sans-serif;
    padding-left: 20px;
+   letter-spacing: 1.5px;
 }
 
 /*Our Story Section*/
@@ -178,7 +186,6 @@ span {
    padding: 30px 25px 0 25px;
 }
 .fa-heart {
-   font-size: 16px;
    color: #970000;
 }
 
@@ -602,12 +609,21 @@ footer {
 
    }
 
+     .love-logo,
+   .fa-heart {
+      font-size: 20px;
+   }
+
+
 }
 
 
 /*Media query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
 
+
+
+  
 
    /* Make "Amanda & Marcus" heading bigger*/
    .couple-text {
@@ -684,10 +700,7 @@ footer {
 /*Media Query: laptop and desktop (992px and up)*/
 @media screen and (min-width: 992px) {
 
-   header>a {
-      font-size: 18px;
-   }
-
+  
    .photos {
       column-count: 3;
       column-gap: 1;
@@ -695,9 +708,15 @@ footer {
       padding: 20px;
    }
 
+   header {
+      align-items: baseline;
+      padding: 3px 15px 3px 20px;
+   }
+
    nav {
-      margin: 0;
       position: relative;
+      margin: 0;
+      width: fit-content;            
       display: block;
       box-shadow: none;
    }
@@ -707,14 +726,20 @@ footer {
       display: flex;
       justify-content: end;
       border: none;
+      margin-bottom: 0;
+      
+     
    }
+
+  
 
    #menu li {
-      padding: 10px;
+      padding: 10px 0; 
    }
 
+  
    #menu a {
-      font-size: 160%;
+      font-size: 140%;
       padding: 0 15px;
 
    }
