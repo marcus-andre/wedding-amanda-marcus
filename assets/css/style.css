@@ -198,6 +198,7 @@ span {
 .fa-clock {
    font-size: 2rem;
    color: #040403;
+   padding-top: 20px;
 }
 
 .countdown-title {
@@ -215,7 +216,7 @@ span {
 #row {
    align-items: center;
    justify-content: center;
-   width: 250px;
+   width: 60%;
    margin: 0px auto;
 }
 
@@ -781,6 +782,14 @@ footer {
       letter-spacing: 1.5px;
    }
 
+   #row {
+       width: 100%;
+   }
+
+   .fa-clock {
+      font-size: 44px;
+         
+   }
 
    #brief-msg {
       padding: 60px 80px;
@@ -882,4 +891,11 @@ footer {
    .wedding-date {
       font-size: 12px;
    }
+
+   .font-size-s {
+      font-size: 16px;
+   }
+
+    
+ 
 }
