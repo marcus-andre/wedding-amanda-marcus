@@ -416,7 +416,7 @@ span {
 #ceremony-title,
 #celebration-title {
    display: flex;
-   width: 65%;
+   width: fit-content;
    justify-content: space-around;
    align-items: baseline;
    padding: 15px 15px;
@@ -435,6 +435,11 @@ span {
    text-align: start;
    padding: 10px 15px;
    padding-top: 0;
+}
+
+.fa-champagne-glasses,
+.fa-church {
+   padding-right: 10px;
 }
 
 .where-when p {
@@ -484,20 +489,22 @@ iframe {
    flex-direction: column;
    align-items: center;
    background: url("../images/form-img.JPEG") no-repeat 50% 50%/cover;
-   padding: 30px 10% 0 10%;
    flex-grow: 1;
+   
  
 }
 
 #signup-form {
-   padding: 30px 20px;
+   padding: 20px;
    background-color: rgba(107, 105, 102, 0.8);
    text-align: start;
    letter-spacing: 2px;
    line-height: 20px;
    color: rgb(244, 228, 209);
-  max-width: 500px;
- 
+   margin: 100px 40px 0 40px;
+
+  
+
 
 }
 
@@ -507,26 +514,24 @@ iframe {
    text-transform: uppercase;
    text-align: center;
    font-weight: 900;
-   padding-bottom: 20px;
+   padding-bottom: 10px;
    letter-spacing: 2px;
-   line-height: 30px;
 
 }
 
 .rsvp-heading {
    color: rgb(244, 228, 209);
-   display: flex;
-   flex-direction: column;
-
-
+   width: 100%;
+   
 }
 
 .rsvp-heading>h2 {
    text-align: center;
-   padding: 40px 20px;
+   padding: 40px;
    letter-spacing: 2px;
    line-height: 20px;
    font-style: italic;
+    margin-bottom: 0px;
 }
 
 .rsvp-heading>h3 {
@@ -535,7 +540,7 @@ iframe {
    line-height: 20px;
 }
 
-/*Taken from love-running*/
+/* Idea taken from love-running*/
 .text-input {
    color: rgb(244, 228, 209);
    background: transparent;
@@ -558,7 +563,7 @@ iframe {
 
 .radio-btn-alignment {
    display: flex;
-   margin-top: 10px;
+   margin-top: 7px;
    align-items: center;
 }
 
@@ -580,17 +585,26 @@ input[type="radio"] {
 }
 
 .dropdown-adults {
-   margin-bottom: 20px;
+   margin: 15px 0;
+ 
 }
 
 #number-of-adults {
-   margin-top: 10px;
+  
    color: rgb(71, 67, 61);
 }
 
 .align-button {
    text-align: center;
 }
+.confirm {
+   text-transform: uppercase;
+   font-weight: 600;
+   color:  rgb(240, 231, 219);
+  padding:20px;
+  margin-bottom: 0px;
+}
+
 
 /*Footer Section*/
 footer {
@@ -715,7 +729,7 @@ footer {
 
    #ceremony-title,
    #celebration-title {
-      width: fit-content;
+     
       padding: 0 0 20px 20px;
    }
 
@@ -751,9 +765,10 @@ footer {
       padding-right: 5px;
    }
 
+   
 }
 
-/*Media Query: laptop and desktop (992px and up)*/
+/*Media Query: For larger screens (992px and up)*/
 @media screen and (min-width: 992px) {
 
 
@@ -920,7 +935,7 @@ footer {
 
 }
 
-/*Media query: Desktop with larger screen (1250px and up)*/
+/*Media query: For XL Screens (1250px and up)*/
 @media screen and (min-width: 1250px) {
 
    .photos {
@@ -930,6 +945,7 @@ footer {
       padding: 0 30px;
    }
 
+   /*Home Secion*/
    .couple-text>span {
       font-size: 30px;
    }
@@ -944,7 +960,7 @@ footer {
    .wedding-date {
       font-size: 12px;
    }
-
+   /*Adjust font sizes for XLarger Screens*/
    .font-size-s {
       font-size: 16px;
    }
@@ -955,21 +971,50 @@ footer {
    .font-size-l {
       font-size: 20px;
    }
-
+   /*Our Story Section*/
    .bible-verse{
 font-size: 15px;
    }
 
-  
+ /*RSVP Form Section*/
+ #rsvp {
+ background: url("../images/form-img.JPEG") no-repeat 50% 42%/cover;
+}
 
+.rsvp-heading>h2 {
+   padding: 20px;
+ 
+}
+.confirm {
+  padding-top: 0;
+  font-size: 16px;
+}
+
+.text-input {
+   margin: 0 0 0 0;
+}
+.radio-btn {
+   margin-bottom: 0;
+}
 
 }
-/*Media query: XL larger screen (1600px and up)*/
+/*Media query: XXlarger screen (1600px and up)*/
 @media screen and (min-width: 1600px) {
    /*Fix Form image position*/
    
+ .photos {
+      column-count: 5;
+      column-gap: 1;
+      line-height: 3;
+      padding: 20px;
+   }
+
  #rsvp {
-   background: url("../images/form-img.JPEG") no-repeat 50% 35%/cover;
+   background: url("../images/form-img.JPEG") no-repeat 50% 32%/cover;
+ }
+
+ #signup-form {
+   margin:140px 40px 0 40px;
  }
 
 }
