@@ -144,10 +144,12 @@ main {
 
 /*Home section*/
 #home {
+   position: relative;
    min-height: 100vh;
    background: url("../images/hero-image.jpg") no-repeat 38% 25px/cover fixed;
 
 }
+
 
 span {
    display: block;
