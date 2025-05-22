@@ -10,32 +10,32 @@
 /*Font sizes of the paragraphs, headdings and forms text*/
 
 .font-size-xs {
-   font-size: 12px;
+   font-size: 0.8125rem;
    color: #1a1813;
    font-weight: 400;
 }
 
 .font-size-s {
-   font-size: 14px;
+   font-size: 0.875rem;
    color: #1a1813;
    font-weight: 400;
 }
 
 .font-size-m {
-   font-size: 16px;
+   font-size: 1rem;
    color: #1a1813;
    font-weight: 600;
 }
 
 .font-size-l {
-   font-size: 18px;
+   font-size: 1.125rem;
    color: #040403;
    font-weight: 600;
 
 }
 
 .text-form-style {
-   font-size: 14px;
+   font-size: 0.9375rem;
    font-family: "Lato", sans-serif;
    color: #1a1813;
    color: rgb(244, 228, 209);
@@ -99,7 +99,7 @@ nav {
 
    padding: 10px 30px;
    font-family: "Lato", sans-serif;
-   font-size: 12px;
+   font-size: 13px;
    letter-spacing: 2px;
    color: #312D24;
    list-style-type: none;
@@ -254,11 +254,14 @@ span {
    display: flex;
    justify-content: center;
    align-items: center;
+   width: fit-content;
    font-size: 20px;
    margin: 0;
-   padding: 10px;
+   padding: 10px 25px;
    width: 100%;
    height: 75px;
+   color: #040403;
+   font-weight: 300;
    background-color: rgba(164, 116, 48, 0.7);
    border: 1px solid rgba(223, 223, 222, 0.8);
    border-radius: 4px;
@@ -269,6 +272,7 @@ span {
 
    font-size: 10px;
    margin: 4px 0 0 0;
+
 }
 
 .space {
@@ -307,11 +311,11 @@ span {
 
 .welcome-end-text {
    text-align: justify;
-   padding: 20px 0px;
+   padding: 60px 10px;
    font-weight: 400;
    line-height: 2;
    letter-spacing: normal;
-
+   
 }
 
 .wcm-end {
@@ -398,9 +402,8 @@ span {
 
 #brief-msg {
    font-family: "Lato", sans-serif;
-   letter-spacing: 2px;
    line-height: 20px;
-   padding: 60px 15px;
+   padding: 60px 10px;
    margin-bottom: 30px;
    text-align: center;
    text-transform: uppercase;
@@ -490,8 +493,8 @@ iframe {
    align-items: center;
    background: url("../images/form-img.JPEG") no-repeat 50% 50%/cover;
    flex-grow: 1;
-   
- 
+
+
 }
 
 #signup-form {
@@ -503,7 +506,7 @@ iframe {
    color: rgb(244, 228, 209);
    margin: 100px 40px 0 40px;
 
-  
+
 
 
 }
@@ -522,7 +525,7 @@ iframe {
 .rsvp-heading {
    color: rgb(244, 228, 209);
    width: 100%;
-   
+
 }
 
 .rsvp-heading>h2 {
@@ -531,7 +534,7 @@ iframe {
    letter-spacing: 2px;
    line-height: 20px;
    font-style: italic;
-    margin-bottom: 0px;
+   margin-bottom: 0px;
 }
 
 .rsvp-heading>h3 {
@@ -586,23 +589,24 @@ input[type="radio"] {
 
 .dropdown-adults {
    margin: 15px 0;
- 
+
 }
 
 #number-of-adults {
-  
+
    color: rgb(71, 67, 61);
 }
 
 .align-button {
    text-align: center;
 }
+
 .confirm {
    text-transform: uppercase;
    font-weight: 600;
-   color:  rgb(240, 231, 219);
-  padding:20px;
-  margin-bottom: 0px;
+   color: rgb(240, 231, 219);
+   padding: 20px;
+   margin-bottom: 0px;
 }
 
 
@@ -705,8 +709,8 @@ footer {
    }
 
    .welcome-end-text {
-      padding: 20px 40px;
-      text-align: start;
+
+      text-align: center;
       letter-spacing: 1.5px;
    }
 
@@ -725,11 +729,13 @@ footer {
    /*Details Section*/
    #brief-msg {
       padding: 60px 22px;
+      text-align: center;
+      letter-spacing: 1.5px;
    }
 
    #ceremony-title,
    #celebration-title {
-     
+
       padding: 0 0 20px 20px;
    }
 
@@ -765,7 +771,7 @@ footer {
       padding-right: 5px;
    }
 
-   
+
 }
 
 /*Media Query: For larger screens (992px and up)*/
@@ -837,10 +843,17 @@ footer {
    }
 
    /*Welcome Section*/
-    .welcome-end-text {
-    
+
+   #row p {
+
+      font-size: 14px;
+      margin: 4px 0 0 0;
+
+   }
+
+   .welcome-end-text {
+
       text-align: center;
-      padding: 20px;
    }
 
    #row {
@@ -859,38 +872,37 @@ footer {
    }
 
 
-
-
-
    /*Font sizes of the paragraphs and headdings*/
 
-.font-size-xs {
-   font-size: 13px;
-}
+   .font-size-xs {
+      font-size: 0.875rem;
+      /*14px*/
+   }
 
    .font-size-s {
-      font-size: 14px;
+      font-size: 0.9375rem;
+      /*15px*/
       letter-spacing: 2.2px;
    }
 
    .font-size-m {
-      font-size: 16px;
+      font-size: 1.0625rem;
+      /*17px*/
       letter-spacing: 2.2px;
    }
 
    .font-size-l {
-      font-size: 18px;
+      font-size: 1.125rem;
+      /*18px*/
       letter-spacing: 2.2px;
    }
 
-   h1 {
-      font-size: 18px;
-      letter-spacing: 2.2px;
-
+   .text-form-style {
+      font-size: 1.0625rem;
    }
 
    .bible-verse {
-      font-size: 13px;
+      font-size: 0.875rem;
 
    }
 
@@ -923,7 +935,7 @@ footer {
 
    /*RSVP form*/
 
-   
+
    .text-input:hover {
       border-color: #dcac4c;
    }
@@ -960,61 +972,142 @@ footer {
    .wedding-date {
       font-size: 12px;
    }
+
    /*Adjust font sizes for XLarger Screens*/
+
+
+   .font-size-xs {
+      font-size: 1rem;
+   }
+
    .font-size-s {
-      font-size: 16px;
+      font-size: 1.15rem;
    }
 
    .font-size-m {
-      font-size: 18px;
+      font-size: 1.3rem;
    }
+
    .font-size-l {
-      font-size: 20px;
+      font-size: 1.55em;
    }
+
+   .text-form-style {
+      font-size: 1.3em;
+   }
+
    /*Our Story Section*/
-   .bible-verse{
-font-size: 15px;
+   .bible-verse {
+      font-size: 1.05rem;
    }
 
- /*RSVP Form Section*/
- #rsvp {
- background: url("../images/form-img.JPEG") no-repeat 50% 42%/cover;
+
+   /*RSVP Form Section*/
+   #rsvp {
+      background: url("../images/form-img.JPEG") no-repeat 50% 42%/cover;
+   }
+
+   .rsvp-heading>h2 {
+      padding: 20px;
+
+   }
+
+   .confirm {
+      padding-top: 0;
+      font-size: 16px;
+   }
+
+   .text-input {
+      margin: 0 0 0 0;
+   }
+
+   .radio-btn {
+      margin-bottom: 0;
+   }
+
+.radio-btn-alignment {
+   margin-top: 10px;
 }
 
-.rsvp-heading>h2 {
-   padding: 20px;
- 
-}
-.confirm {
-  padding-top: 0;
-  font-size: 16px;
-}
+   /*Footer*/
 
-.text-input {
-   margin: 0 0 0 0;
-}
-.radio-btn {
-   margin-bottom: 0;
-}
+   .logo {
+      font-size: 160%;
+   }
+
+   #social-networks i {
+      font-size: 200%;
+   }
 
 }
+
 /*Media query: XXlarger screen (1600px and up)*/
 @media screen and (min-width: 1600px) {
    /*Fix Form image position*/
-   
- .photos {
+
+   .photos {
       column-count: 5;
       column-gap: 1;
       line-height: 3;
       padding: 20px;
    }
 
- #rsvp {
-   background: url("../images/form-img.JPEG") no-repeat 50% 32%/cover;
- }
+   /*Header*/
 
- #signup-form {
-   margin:140px 40px 0 40px;
- }
+   .love-logo {
+      font-size: 1.7rem;
+   }
+
+   #menu a {
+      font-size: 190%;
+   }
+
+   /*Adjust font sizes for XLarger Screens*/
+
+
+   .font-size-xs {
+      font-size: 1.15rem;
+   }
+
+   .font-size-s {
+      font-size: 1.25rem;
+   }
+
+   .font-size-m {
+      font-size: 1.5rem;
+   }
+
+   .font-size-l {
+      font-size: 1.75rem;
+   }
+
+   .text-form-style {
+      font-size: 1.35rem;
+   }
+
+   #row p {
+      font-size: 1.125rem;
+   }
+
+   /*Our Story Section*/
+
+   .bible-verse {
+      font-size: 1.125rem;
+   }
+
+   /*Details Section*/
+   .fa-champagne-glasses,
+.fa-church {
+   padding-right: 20px;
+   font-size: 1.75rem;
+}
+
+   #rsvp {
+      background: url("../images/form-img.JPEG") no-repeat 50% 32%/cover;
+   }
+
+   #signup-form {
+      margin: 140px 40px 0 40px;
+   }
 
 }
