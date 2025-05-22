@@ -16,6 +16,11 @@
    flex-direction: column;
    font-family: "Lato", sans-serif;
 }
+.text-max-width {
+max-width: 1400px;
+ margin-left: auto;
+   margin-right: auto;
+}
 
 /*Font sizes of the paragraphs, headdings and forms text*/
 
@@ -356,7 +361,7 @@ span {
 .our-story-message1 {
    padding: 10px 15px;
    text-align: start;
-}
+ }
 
 .our-story-message2 {
    text-align: start;
@@ -378,10 +383,8 @@ span {
 
 .image {
    display: flex;
-   flex-wrap: wrap;
    justify-content: center;
    padding: 5px;
-
 }
 
 .image img {
@@ -418,9 +421,12 @@ span {
 
 .events-img {
    width: 100%;
-   padding: 15px;
+   
+    padding: 15px;
 
 }
+
+
 
 #ceremony-title,
 #celebration-title {
@@ -485,6 +491,9 @@ iframe {
 .photos {
    line-height: 0;
    padding: 10px;
+   max-width: 1600px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 /*RSVP Section*/
@@ -498,9 +507,7 @@ iframe {
    flex-direction: column;
    align-items: center;
    background: url("../images/form-img.JPEG") no-repeat 50% 50%/cover;
-   flex-grow: 1;
-
-
+  
 }
 
 #signup-form {
@@ -743,6 +750,7 @@ footer {
    #celebration-title {
 
       padding: 0 0 20px 20px;
+      
    }
 
    .text-details {
@@ -752,13 +760,17 @@ footer {
 
    iframe {
       width: 100%;
-      height: 300px;
+    height: 300px;
       padding-top: 10px;
       padding-bottom: 30px;
    }
+   .image {
+      margin-left: auto;
+      margin-right: auto;
+   }
 
    .image img {
-      width: 80%;
+      width: 100%;
       padding: 10px 20px;
    }
 
@@ -922,20 +934,20 @@ footer {
    .our-story-message1 {
 
       padding: 0 20px;
-      margin: 0;
+    
 
    }
 
    .our-story-message2 {
 
       padding: 0 10px;
-      margin-bottom: 10px;
+    
 
    }
 
    /*Detais*/
    .text-details {
-      padding: 0 100px;
+      
       text-align: center;
    }
 
@@ -1006,7 +1018,16 @@ footer {
    .bible-verse {
       font-size: 1.05rem;
    }
+   .our-story-message1 {
+         margin-left: 15%;
+   margin-right: 15%;
 
+   }
+
+   .our-story-message2 {
+            margin-left: 13%;
+   margin-right: 13%;
+   }
 
    /*RSVP Form Section*/
    #rsvp {
