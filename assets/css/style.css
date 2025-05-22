@@ -287,7 +287,7 @@ span {
 }
 
 .space {
-   height: 50px;
+   height: 100px;
 
 }
 
@@ -322,7 +322,7 @@ span {
 
 .welcome-end-text {
    text-align: justify;
-   padding: 60px 10px;
+   padding: 60px 15px;
    font-weight: 400;
    line-height: 2;
    letter-spacing: normal;
@@ -396,8 +396,6 @@ span {
 }
 
 
-
-
 /*Details Section*/
 #details {
 
@@ -412,7 +410,7 @@ span {
 #brief-msg {
    font-family: "Lato", sans-serif;
    line-height: 20px;
-   padding: 60px 10px;
+   padding: 60px 15px;
    margin-bottom: 30px;
    text-align: center;
    text-transform: uppercase;
@@ -741,7 +739,7 @@ footer {
 
    /*Details Section*/
    #brief-msg {
-      padding: 60px 22px;
+     
       text-align: center;
       letter-spacing: 1.5px;
    }
@@ -761,8 +759,7 @@ footer {
    iframe {
       width: 100%;
     height: 300px;
-      padding-top: 10px;
-      padding-bottom: 30px;
+      padding: 30px 0;
    }
    .image {
       margin-left: auto;
@@ -884,34 +881,26 @@ footer {
    }
 
 
-   /*Details Section*/
-   #brief-msg {
-      padding: 60px 80px;
-   }
 
 
    /*Font sizes of the paragraphs and headdings*/
 
    .font-size-xs {
-      font-size: 0.875rem;
-      /*14px*/
+      font-size: 0.875rem; /*14px*/
    }
 
    .font-size-s {
-      font-size: 0.9375rem;
-      /*15px*/
+      font-size: 0.9375rem; /*15px*/
       letter-spacing: 2.2px;
    }
 
    .font-size-m {
-      font-size: 1.0625rem;
-      /*17px*/
+      font-size: 1.0625rem; /*17px*/
       letter-spacing: 2.2px;
    }
 
    .font-size-l {
-      font-size: 1.125rem;
-      /*18px*/
+      font-size: 1.125rem; /*18px*/
       letter-spacing: 2.2px;
    }
 
@@ -924,31 +913,62 @@ footer {
 
    }
 
+   /*Details Section*/
+   #brief-msg {
+      padding: 60px 40px;
+   }
+   #celebration-title,
+   #ceremony-title {
+      padding: 0 40px;
+   }
 
    .our-story {
       display: flex;
 
    }
+   
+   .where-when {
+      padding: 0 40px;
+   }
+.where-when  p{
+      margin: 12px 0;
+   }
+  
+   .map {
+      padding: 20px 40px;
+   }
 
+   .events-img {
+      padding:10px 40px;
+   }
+
+   .welcome-end-text{
+      padding: 60px 0;
+   }
+
+   .wcm-end {
+      padding: 0 40px;
+   }
 
    .our-story-message1 {
 
-      padding: 0 20px;
+      padding: 0 40px;
     
 
    }
 
    .our-story-message2 {
 
-      padding: 0 10px;
+      padding: 0 40px;
     
 
    }
 
    /*Detais*/
    .text-details {
-      
+      margin: 20px 10px 40px 10px;
       text-align: center;
+      line-height: 20px;
    }
 
    /*RSVP form*/
@@ -1018,18 +1038,10 @@ footer {
    .bible-verse {
       font-size: 1.05rem;
    }
-   .our-story-message1 {
-         margin-left: 15%;
-   margin-right: 15%;
-
-   }
-
-   .our-story-message2 {
-            margin-left: 13%;
-   margin-right: 13%;
-   }
+  
 
    /*RSVP Form Section*/
+ 
    #rsvp {
       background: url("../images/form-img.JPEG") no-repeat 50% 42%/cover;
    }
@@ -1044,6 +1056,9 @@ footer {
       font-size: 16px;
    }
 
+   .confirm-button {
+      margin-top: 40px;
+   }
    .text-input {
       margin: 0 0 0 0;
    }
