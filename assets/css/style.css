@@ -7,6 +7,16 @@
    box-sizing: border-box;
 }
 
+#body {
+   max-width: 1800px;
+   margin-left: auto;
+   margin-right: auto;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   font-family: "Lato", sans-serif;
+}
+
 /*Font sizes of the paragraphs, headdings and forms text*/
 
 .font-size-xs {
@@ -41,12 +51,6 @@
    color: rgb(244, 228, 209);
 }
 
-body {
-   min-height: 100vh;
-   display: flex;
-   flex-direction: column;
-   font-family: "Lato", sans-serif;
-}
 
 h1 {
    text-transform: uppercase;
@@ -66,7 +70,7 @@ header {
    position: fixed;
    z-index: 99;
    width: 100%;
-
+   max-width: 1800px;
 }
 
 
@@ -315,7 +319,7 @@ span {
    font-weight: 400;
    line-height: 2;
    letter-spacing: normal;
-   
+
 }
 
 .wcm-end {
@@ -1025,9 +1029,9 @@ footer {
       margin-bottom: 0;
    }
 
-.radio-btn-alignment {
-   margin-top: 10px;
-}
+   .radio-btn-alignment {
+      margin-top: 10px;
+   }
 
    /*Footer*/
 
@@ -1097,10 +1101,10 @@ footer {
 
    /*Details Section*/
    .fa-champagne-glasses,
-.fa-church {
-   padding-right: 20px;
-   font-size: 1.75rem;
-}
+   .fa-church {
+      padding-right: 20px;
+      font-size: 1.75rem;
+   }
 
    #rsvp {
       background: url("../images/form-img.JPEG") no-repeat 50% 32%/cover;
