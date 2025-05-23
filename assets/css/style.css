@@ -7,6 +7,10 @@
    box-sizing: border-box;
 }
 
+html {
+   background-color: rgb(235, 197, 154);
+}
+
 #body {
    max-width: 1800px;
    margin-left: auto;
@@ -193,7 +197,7 @@ span {
    display: flex;
    flex-direction: column;
    font-family: "Lato", sans-serif;
-
+  
 }
 
 .countdown-icon {
@@ -399,7 +403,7 @@ span {
 /*Details Section*/
 #details {
 
-   background-color: rgb(200, 168, 130);
+   background-color: rgb(252, 235, 205);
    font-family: "Lato", sans-serif;
    display: flex;
    flex-direction: column;
@@ -453,6 +457,7 @@ span {
 .fa-champagne-glasses,
 .fa-church {
    padding-right: 10px;
+   color: #970000;
 }
 
 .where-when p {
