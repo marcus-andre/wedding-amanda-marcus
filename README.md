@@ -1,11 +1,9 @@
 # Amanda & Marcus - Wedding Website
 
-Amanda & Marcus wedding website is my idea of website for engaged couples who are getting merried and they want to share information with their guest quickly and virtually. I used myself and my girlfriend as the Bride and the Groom model. 
+Amanda & Marcus wedding website is my idea of website for engaged couples who are getting merried and they want to share information with their guest quickly and virtually.
 
 The main objective of this website is to confirm attendance and control the guest list, provide information about the wedding (where the ceremony and celebration will be, with date, time and location) and show a little bit story of each one and how they met.
 
-
-[View the live project here.]https://marcus-andre.github.io/wedding-amanda-marcus/
 
 ![Responsice Mockup](./assets/images/mockup-img.png)
 
@@ -112,3 +110,34 @@ Oficials validator services were used to validate all pages of the project and n
 - W3C CSS Validator
 ![CSS results](./assets/images/CSS-validator.png)
 
+- Lighthouse Validator
+![lighthouse results](./assets/images/lighthouse-img.png)
+
+### Unfixed Bugs
+
+No unfixed bugs
+
+
+
+- The website was deployed to GitHub pages. The steps to deploy are as follows:
+
+  - Log in to GitHub and locate the GitHub Repository.
+  - In the GitHub repository, navigate to the "Settings" tab.
+  - In Settings, choose "Pages" from the left hand menu.
+  - Under "Source", select branch "Main" and select folder "(Root)".
+  - Click Save and the page will be automatically refreshed with a link to the completed website indicating the successful deployment.
+
+  [View the live project here.]https://marcus-andre.github.io/wedding-amanda-marcus/
+
+  ### Credits
+
+  #### Content
+
+  - The scrip for the countdown clock was taken from https://bootstrapexamples.com/@moana-silva/countdown-timer/fullscreen-preview.
+  - The idea of the confirmation form was taken from [Love Running]("https://marcus-andre.github.io/love-running/")
+
+  #### Media
+  - All the images of the couples are personal pictures as the bride and broom in the website are myself and my girlfriend.
+
+  ### Acknowledgements
+  - My mentor at Code Institute for helpful feedback.
