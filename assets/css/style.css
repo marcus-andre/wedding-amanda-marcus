@@ -480,6 +480,8 @@ span {
 }
 
 iframe {
+   width: 100%;
+   height: 150px;
    border: 0;
    padding: 0 15px;
 }
@@ -635,7 +637,7 @@ footer {
 
 .footer {
    display: flex;
-   align-items: baseline;
+   align-items: last baseline;
    justify-content: space-between;
    padding: 20px 15px;
 }
@@ -657,6 +659,9 @@ footer {
    margin: 0;
 }
 
+
+
+
 /*Media query: Large or landscape phones (576px and up)*/
 @media screen and (min-width:576px) {
 
@@ -664,9 +669,9 @@ footer {
 
    .photos {
       column-count: 2;
-      column-gap: 1;
+      column-gap: 10px;
       line-height: 2;
-      padding: 0 15px;
+      padding: 0px 15px;
    }
 
    /* Make "Amanda & Marcus" heading loos better and bigger*/
@@ -800,7 +805,7 @@ footer {
 
    .photos {
       column-count: 3;
-      column-gap: 1;
+      column-gap: 15px;
       line-height: 3;
       padding: 20px;
    }
@@ -1094,7 +1099,7 @@ footer {
 
    .photos {
       column-count: 5;
-      column-gap: 1;
+      column-gap: 20px;
       line-height: 3;
       padding: 20px;
    }
